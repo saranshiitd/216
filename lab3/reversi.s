@@ -70,6 +70,11 @@ stmdb sp!,{r0,r1,r2,r3,r14}
 bl DISP
 ldmia sp!,{r14,r3,r2,r1,r0} 
 
+mov r0 , # 30 
+mov r1 , # 0 
+ldr r2 , =Score_String
+swi SWI_DRAW_STRING
+
 getInput:  @ getting row number here
 mov r0,#0
 swi SWI_Board_Input 
@@ -224,6 +229,26 @@ mov r1,#10
 ldr r2,=Remove_Invalid
 swi 0x204 
 ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
+stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
+bl SCORE
+
+mov r0 , #30
+mov r1 , #1 
+mov r2 , #79
+swi SWI_DRAW_CHAR
+mov r0 , #32 
+mov r2 ,r3 
+swi SWI_DRAW_INT  
+mov r0 , #30
+mov r1 , #2 
+mov r2 , #88 
+swi SWI_DRAW_CHAR
+mov r0 , #32 
+mov r2 ,r4 
+swi SWI_DRAW_INT  
+
+
+ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
 b on_completion_of_loop
 is_invalid:
 stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
@@ -241,18 +266,18 @@ updateBoard: @ for updating board with row number in r0 column number in r1 retu
 
 mov r3 , r0 
 mov r4 , r1
-mov r0 , #25
+mov r0 , #30
 mov r1 , #6 
-mov r2 , #88 
-swi SWI_DRAW_CHAR
-mov r0 , #27 
+ldr r2 ,=row_string 
+swi SWI_DRAW_STRING
+mov r0 , #34 
 mov r2 ,r3 
 swi SWI_DRAW_INT  
-mov r0 , #25
+mov r0 , #30
 mov r1 , #8 
-mov r2 , #89 
-swi SWI_DRAW_CHAR
-mov r0 , #27 
+ldr r2 ,=col_string 
+swi SWI_DRAW_STRING
+mov r0 , #34 
 mov r2 ,r4 
 swi SWI_DRAW_INT  
 mov r1 , r4 
@@ -1023,12 +1048,12 @@ mov pc,lr
 
 SCORE: @requires {r0,r1,r2,r3,r4,r5}, returns 0's score in r3 and 1's score in r4
 ldr r0,=BOARD
-ldr r5,[r0,#63]
+add r5,r0,#63
 mov r1,#0
 mov r3,#0
 mov r4,#0
 SCORE_LOOP:
-ldr r2,[r0]
+ldrb r2,[r0]
 cmp r2,#0
 addeq r3,r3,#1
 cmp r2,#1
@@ -1051,4 +1076,7 @@ PLAYER: .space 1 @0-'O',1-'X'
 INVERT: .word 1,0 @ 1,0
 Invalid_Message: .asciz "Invalid Move\n"
 Remove_Invalid: .asciz "            \n"
+Score_String: .asciz "Score:\n"
+row_string: .asciz "row\n"
+col_string: .asciz "col\n"
 .end

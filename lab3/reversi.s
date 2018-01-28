@@ -76,6 +76,28 @@ ldr r2 , =Score_String
 swi SWI_DRAW_STRING
 
 getInput:  @ getting row number here
+
+@stmdb sp!,{r14,r6,r5,r4,r3,r2,r1,r0}
+@bl PASS
+@cmp r3 , #0 
+@bne input_process
+@ldr r4,=PLAYER
+@ldr r5,=INVERT
+@ldrb r6,[r4]
+@ldrb r6,[r5,r6]
+@strb r6,[r4]
+@mov r4,r0
+@cmp r6,#0
+@moveq r0,#0x02
+@movne r0,#0x01
+@swi SWI_Light_Bulb
+@mov r0,r4
+@ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
+stmdb sp! , {r14}
+bl PASS
+cmp r3 ,#0
+ldmia sp! , {r14}
+beq change_player
 mov r0,#0
 swi SWI_Board_Input 
 cmp r0,#0
@@ -212,6 +234,7 @@ endGetColumn:
 cmp r3,#1
 bne is_invalid
 @Player state change
+change_player:
 ldr r4,=PLAYER
 ldr r5,=INVERT
 ldrb r6,[r4]
@@ -224,7 +247,7 @@ movne r0,#0x01
 swi SWI_Light_Bulb
 mov r0,r4
 stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
-mov r0,#25
+mov r0,#30
 mov r1,#10
 ldr r2,=Remove_Invalid
 swi 0x204 
@@ -252,7 +275,7 @@ ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
 b on_completion_of_loop
 is_invalid:
 stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
-mov r0,#25
+mov r0,#30
 mov r1,#10
 ldr r2,=Invalid_Message
 swi 0x204 
@@ -271,7 +294,8 @@ mov r1 , #6
 ldr r2 ,=row_string 
 swi SWI_DRAW_STRING
 mov r0 , #34 
-mov r2 ,r3 
+mov r2 ,r3
+add r2,r2,#1 
 swi SWI_DRAW_INT  
 mov r0 , #30
 mov r1 , #8 
@@ -279,6 +303,7 @@ ldr r2 ,=col_string
 swi SWI_DRAW_STRING
 mov r0 , #34 
 mov r2 ,r4 
+add r2,r2,#1
 swi SWI_DRAW_INT  
 mov r1 , r4 
 mov r0 , r3 
@@ -972,76 +997,112 @@ mov r0,r1
 mov r1,r2
 mov r2,#0
 
-stmdb sp!,{r0,r1,r2,r14}
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl EAST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl WEST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl NORTH
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
-stmdb sp!,{r0,r1,r2,r14}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl SOUTH
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl SOUTH_EAST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl SOUTH_WEST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl NORTH_EAST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
 
-stmdb sp!,{r0,r1,r2,r14}
+
+stmdb sp!,{r0,r1,r2}
+stmdb sp!,{r14}
 bl NORTH_WEST
+ldmia sp!,{r14}
 cmp r0,#1
-moveq pc,lr
-ldmia sp!,{r14,r2,r1,r0}
+beq VALID_RT
+ldmia sp!,{r2,r1,r0}
+
 
 mov r0,#0
+mov pc,lr
+
+VALID_RT:
+ldmia sp!,{r2,r1,r0}
+mov r0,#1
 mov pc,lr
 
 
 
 
 PASS: @check if valid move exists or not {returns 0 in r3 if no valid move, else returns 1}
-mov r3,#0 @return value
+mov r3,#1 @return value
 mov r1,#0 @For row
 PASS_LOOP1:
 mov r2,#0 @For col
 PASS_LOOP2:
-stmdb sp!,{r14,r0,r1,r2,r3}
+stmdb sp!,{r0,r1,r2,r3}
+stmdb sp!,{r14}
 bl CHECK_VALID @r0=#1 if valid
-orr r3,r3,r0
-ldmia sp!,{r3,r2,r1,r0,r14}
+ldmia sp!,{r14}
+cmp r0,#1
+ldmia sp!,{r3,r2,r1,r0}
+beq PASS_RT
 add r2,r2,#1
 cmp r2,#8
 blt PASS_LOOP2
-cmp r1,#1
+add r1,r1,#1
+cmp r1,#8
 blt PASS_LOOP1
-eor r3,r3,#1
+mov r3,#0
+mov pc,lr
+PASS_RT:
+mov r3,#1
 mov pc,lr
 
 

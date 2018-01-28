@@ -205,7 +205,7 @@ ldmia sp!,{r14,r3,r2,r1,r0}
 moveq r3,#1
 endGetColumn:
 cmp r3,#1
-bne getInput
+bne is_invalid
 @Player state change
 ldr r4,=PLAYER
 ldr r5,=INVERT
@@ -218,11 +218,27 @@ moveq r0,#0x02
 movne r0,#0x01
 swi SWI_Light_Bulb
 mov r0,r4
+stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
+mov r0,#25
+mov r1,#10
+ldr r2,=Remove_Invalid
+swi 0x204 
+ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
+b on_completion_of_loop
+is_invalid:
+stmdb sp! , {r14,r6,r5,r4,r3,r2,r1,r0}
+mov r0,#25
+mov r1,#10
+ldr r2,=Invalid_Message
+swi 0x204 
+ldmia sp! , {r0,r1,r2,r3,r4,r5,r6,r14}
+b on_completion_of_loop
+on_completion_of_loop:
 b getInput
 
-
-
 updateBoard: @ for updating board with row number in r0 column number in r1 returns 1 if some direction is changed otherwise 0
+
+
 mov r3 , r0 
 mov r4 , r1
 mov r0 , #25
@@ -926,56 +942,56 @@ mov pc,lr
 
 
 
-CHECK_VALID: {r1-row, r2-col, returns r0=1 if valid move}
+CHECK_VALID: @{r1-row, r2-col, returns r0=1 if valid move}
 mov r0,r1
 mov r1,r2
 mov r2,#0
 
 stmdb sp!,{r0,r1,r2,r14}
 bl EAST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl WEST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl NORTH
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 stmdb sp!,{r0,r1,r2,r14}
 
 bl SOUTH
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl SOUTH_EAST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl SOUTH_WEST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl NORTH_EAST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
 stmdb sp!,{r0,r1,r2,r14}
 bl NORTH_WEST
-cmp r0.#1
+cmp r0,#1
 moveq pc,lr
 ldmia sp!,{r14,r2,r1,r0}
 
@@ -991,7 +1007,7 @@ mov r1,#0 @For row
 PASS_LOOP1:
 mov r2,#0 @For col
 PASS_LOOP2:
-strmb sp!,{r14,r0,r1,r2,r3}
+stmdb sp!,{r14,r0,r1,r2,r3}
 bl CHECK_VALID @r0=#1 if valid
 orr r3,r3,r0
 ldmia sp!,{r3,r2,r1,r0,r14}
@@ -1033,5 +1049,6 @@ OutFileName: .asciz "out.txt"
 BOARD:	.space 65 @8x8 (+1) Board configuration (0-'O',1-'X',2-'-')
 PLAYER: .space 1 @0-'O',1-'X'
 INVERT: .word 1,0 @ 1,0
-
+Invalid_Message: .asciz "Invalid Move\n"
+Remove_Invalid: .asciz "            \n"
 .end

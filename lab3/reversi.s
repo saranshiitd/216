@@ -892,6 +892,103 @@ mov pc,lr
 
 
 
+CHECK_VALID: {r1-row, r2-col, returns r0=1 if valid move}
+mov r0,r1
+mov r1,r2
+mov r2,#0
+
+stmdb sp!,{r0,r1,r2,r14}
+bl EAST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl WEST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl NORTH
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+stmdb sp!,{r0,r1,r2,r14}
+
+bl SOUTH
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl SOUTH_EAST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl SOUTH_WEST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl NORTH_EAST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+stmdb sp!,{r0,r1,r2,r14}
+bl NORTH_WEST
+cmp r0.#1
+moveq pc,lr
+ldmia sp!,{r14,r2,r1,r0}
+
+mov r0,#0
+mov pc,lr
+
+
+
+
+PASS: @check if valid move exists or not {returns 0 in r3 if no valid move, else returns 1}
+mov r3,#0 @return value
+mov r1,#0 @For row
+PASS_LOOP1:
+mov r2,#0 @For col
+PASS_LOOP2:
+strmb sp!,{r14,r0,r1,r2,r3}
+bl CHECK_VALID @r0=#1 if valid
+orr r3,r3,r0
+ldmia sp!,{r3,r2,r1,r0,r14}
+add r2,r2,#1
+cmp r2,#8
+blt PASS_LOOP2
+cmp r1,#1
+blt PASS_LOOP1
+eor r3,r3,#1
+mov pc,lr
+
+
+
+SCORE: @requires {r0,r1,r2,r3,r4,r5}, returns 0's score in r3 and 1's score in r4
+ldr r0,=BOARD
+ldr r5,[r0,#63]
+mov r1,#0
+mov r3,#0
+mov r4,#0
+SCORE_LOOP:
+ldr r2,[r0]
+cmp r2,#0
+addeq r3,r3,#1
+cmp r2,#1
+addeq r4,r4,#1
+add r0,r0,#1
+cmp r0,r5
+ble SCORE_LOOP
+mov pc,lr
+
+
 
 
 

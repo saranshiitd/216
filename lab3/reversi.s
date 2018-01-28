@@ -66,11 +66,12 @@ add r0,r0,#1
 cmp r0,#8
 bne LoopIn
 
-getInput:  @ getting row number here
-mov r0,#0
 stmdb sp!,{r0,r1,r2,r3,r14}
 bl DISP
 ldmia sp!,{r14,r3,r2,r1,r0} 
+
+getInput:  @ getting row number here
+mov r0,#0
 swi SWI_Board_Input 
 cmp r0,#0
 beq getInput
@@ -101,6 +102,15 @@ beq getColumn
 @ cmp r0, 256
 @ cmp r0, 512
 getColumn: @ getting column number here with row number stored in r1
+@mov r3 , r1 
+@mov r0 , #25
+@mov r1 , #6 
+@mov r2 , #88 
+@swi SWI_DRAW_CHAR
+@mov r0 , #27 
+@mov r2 ,r3 
+@swi SWI_DRAW_INT 
+@mov r1 ,r3 
 mov r0,#0
 mov r3,#0
 swi SWI_Board_Input 
@@ -213,6 +223,27 @@ b getInput
 
 
 updateBoard: @ for updating board with row number in r0 column number in r1 returns 1 if some direction is changed otherwise 0
+mov r3 , r0 
+mov r4 , r1
+mov r0 , #25
+mov r1 , #6 
+mov r2 , #88 
+swi SWI_DRAW_CHAR
+mov r0 , #27 
+mov r2 ,r3 
+swi SWI_DRAW_INT  
+mov r0 , #25
+mov r1 , #8 
+mov r2 , #89 
+swi SWI_DRAW_CHAR
+mov r0 , #27 
+mov r2 ,r4 
+swi SWI_DRAW_INT  
+mov r1 , r4 
+mov r0 , r3 
+
+
+
 mov r2,#0
 mov r3, #0
 stmdb sp! , {r0,r1,r2,r14,r3}
@@ -316,6 +347,9 @@ mov r0,#0
 mov pc,lr
 nonNullEnd:
 mov r0,#1
+stmdb sp!,{r0,r1,r2,r3,r14}
+bl DISP
+ldmia sp!,{r14,r3,r2,r1,r0} 
 mov pc,lr
 
 @Testing for WEST

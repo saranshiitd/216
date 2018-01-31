@@ -26,10 +26,11 @@ str r0,[r1]
 
 @Player initializationLecture 1: 
 start:
+swi SWI_CLEAR_DISPLAY
 @Player initialization: 
 
 ldr r0,=PLAYER
-mov r1,#0 @Player 0 begins the game
+mov r1,#1 @Player 0 begins the game
 strb r1,[r0]
 mov r0, #0x02
 swi SWI_Light_Bulb
@@ -395,7 +396,7 @@ beq toSOUTH_WEST
 mov r2,#1
 mov r3,#1 
 stmdb sp! , {r0,r1,r2,r14,r3}
-bl NORTH_WEST
+bl NORTH_EAST
 ldmia sp!,{r3,r14,r2,r1,r0}
 toSOUTH_WEST:
 mov r2,#0

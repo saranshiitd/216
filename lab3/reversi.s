@@ -17,7 +17,7 @@ ldr r1,=OutFileHandle
 str r0,[r1]
 
 @Player initializationLecture 1: 
-
+start:
 ldr r0,=PLAYER
 mov r1,#0 @Player 0 begins the game
 strb r1,[r0]
@@ -66,14 +66,15 @@ add r0,r0,#1
 cmp r0,#8
 bne LoopIn
 
-stmdb sp!,{r0,r1,r2,r3,r14}
+stmdb sp!,{r0,r1,r2,r3,r4,r14}
 bl DISP
-ldmia sp!,{r14,r3,r2,r1,r0} 
+ldmia sp!,{r14,r4,r3,r2,r1,r0} 
 
 mov r0 , # 30 
 mov r1 , # 0 
 ldr r2 , =Score_String
 swi SWI_DRAW_STRING
+mov r9 , #1
 
 getInput:  @ getting row number here
 
@@ -97,11 +98,15 @@ stmdb sp! , {r14}
 bl PASS
 cmp r3 ,#0
 ldmia sp! , {r14}
+stmdb sp! , {r14,r3,r0}
+bleq check_game_over
+ldmia sp! , {r0,r3,r14}
 beq change_player
 mov r0,#0
 swi SWI_Board_Input 
 cmp r0,#0
 beq getInput
+mov r9 , #1
 cmp r0, #1
 moveq r1, #0
 beq getColumn
@@ -413,9 +418,9 @@ mov r0,#0
 mov pc,lr
 nonNullEnd:
 mov r0,#1
-stmdb sp!,{r0,r1,r2,r3,r14}
+stmdb sp!,{r0,r1,r2,r3,r4,r14}
 bl DISP
-ldmia sp!,{r14,r3,r2,r1,r0} 
+ldmia sp!,{r14,r4,r3,r2,r1,r0} 
 mov pc,lr
 
 @Testing for WEST
@@ -1124,10 +1129,54 @@ cmp r0,r5
 ble SCORE_LOOP
 mov pc,lr
 
+check_game_over: @ {returns nothing}
+cmp r9 , #0
+movne r9 , #0
+movne pc , lr 
+mov r0 , #1
+b on_game_over
 
-
-
-
+on_game_over:
+stmdb sp! , {r14}
+mov r0,#30
+mov r1,#10
+ldr r2 , =Remove_Invalid
+swi 0x204 
+ldmia sp! , {r14}
+stmdb sp! , {r14}
+mov r0,#30
+mov r1,#10
+ldr r2 , =game_over_string
+swi 0x204 
+ldmia sp! , {r14}
+stmdb sp! , {r14}
+bl SCORE 
+ldmia sp! , {r14}
+cmp r3 , r4
+blt x_won
+stmdb sp! , {r14}
+mov r0,#30
+mov r1,#12
+ldr r2 , =winner_o
+swi 0x204 
+ldmia sp! , {r14}
+new_game1:
+swi SWI_Board_Input
+cmp r0 ,#0
+beq new_game1
+b start
+x_won:
+stmdb sp! , {r14}
+mov r0,#30
+mov r1,#12
+ldr r2 , =winner_x
+swi 0x204 
+ldmia sp! , {r14}
+new_game2:
+swi SWI_Board_Input
+cmp r0 ,#0
+beq new_game2
+b start
 
 .data
 OutFileHandle: .word 0
@@ -1140,4 +1189,7 @@ Remove_Invalid: .asciz "            \n"
 Score_String: .asciz "Score:\n"
 row_string: .asciz "row\n"
 col_string: .asciz "col\n"
+game_over_string: .asciz "GAME OVER\n"
+winner_x: .asciz "Winner : X"
+winner_o: .asciz "Winner : O"
 .end

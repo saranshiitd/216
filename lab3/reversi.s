@@ -10,13 +10,21 @@
 	.text
 	
 
+ldr r0,=int_to_char
+mov r1,#79
+strb r1,[r0,#0]
+mov r1,#88
+strb r1,[r0,#1]
+mov r1,#45
+strb r1,[r0,#2]
+        
 ldr r0,=OutFileName		@print contents at [r0]
 mov r1,#1 @output mode
 swi SWI_Open
 ldr r1,=OutFileHandle
 str r0,[r1]
 
-@Player initializationLecture 1: 
+@Player initialization: 
 
 ldr r0,=PLAYER
 mov r1,#0 @Player 0 begins the game
@@ -476,22 +484,42 @@ bleq NORTH
 bl DISP
 swi SWI_Exit
 
-@display board {requires r0,r1,r2,r3}
+@display board {requires r0,r1,r2,r3,r4}
 DISP:
-mov r1,#0 @initialize counter for row
+mov r1,#3 @initialize counter for row
+ldr r4,=int_to_char
 ldr r3,=BOARD
 Loop1_disp:
-mov r0,#0 @initialize counter for column
+mov r0,#4 @initialize counter for column
 Loop2_disp:
 ldrb r2,[r3]
-swi      SWI_DRAW_INT       @ draw to the LCD screen
+ldrb r2,[r4,r2]
+swi      SWI_DRAW_CHAR       @ draw to the LCD screen
 add r3,r3,#1
-add r0,r0,#3
-cmp r0,#24
+add r0,r0,#2
+cmp r0,#20
 bne Loop2_disp
-add r1,r1,#2
-cmp r1,#16
+add r1,r1,#1
+cmp r1,#11
 bne Loop1_disp
+mov r0,#4
+mov r1,#2
+mov r2,#0
+Loop3_disp: @For printing 1,2,... in columns
+add r2,r2,#1
+swi SWI_DRAW_INT
+add r0,r0,#2
+cmp r0,#20
+bne Loop3_disp
+mov r0,#2
+mov r1,#3
+mov r2,#0
+Loop4_disp: @For printing 1,2.. in rows
+add r2,r2,#1
+swi SWI_DRAW_INT
+add r1,r1,#1
+cmp r1,#11
+bne Loop4_disp
 mov pc,lr
 
 @Flip north {input in r0 (row index), r1 (column index) and r2 (0-only check for match, 1- check and change)}
@@ -1140,4 +1168,5 @@ Remove_Invalid: .asciz "            \n"
 Score_String: .asciz "Score:\n"
 row_string: .asciz "row\n"
 col_string: .asciz "col\n"
+int_to_char: .space 3
 .end

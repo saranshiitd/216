@@ -24,7 +24,6 @@ swi SWI_Open
 ldr r1,=OutFileHandle
 str r0,[r1]
 
-@Player initializationLecture 1: 
 start:
 swi SWI_CLEAR_DISPLAY
 @Player initialization: 
@@ -434,63 +433,7 @@ bl DISP
 ldmia sp!,{r14,r4,r3,r2,r1,r0} 
 mov pc,lr
 
-@Testing for WEST
-mov r0,#3
-mov r1,#5
-mov r2,#0
-stmdb sp!,{r0,r1}
-bl WEST
-cmp r0,#1
-moveq r2,#1
-ldmia sp!,{r1,r0}
-bleq WEST
-bl DISP
-swi SWI_Exit
 
-
-
-@Testing for EAST
-mov r0,#4
-mov r1,#7
-mov r2,#0
-stmdb sp!,{r0,r1}
-bl EAST
-cmp r0,#1
-moveq r2,#1
-ldmia sp!,{r1,r0}
-bleq EAST
-bl DISP
-swi SWI_Exit
-
-
-
-@Testing for SOUTH
-mov r0,#2
-mov r1,#3
-mov r2,#0
-stmdb sp!,{r0,r1}
-bl SOUTH
-cmp r0,#1
-moveq r2,#1
-ldmia sp!,{r1,r0}
-bleq SOUTH
-bl DISP
-swi SWI_Exit
-
-
-
-@Testing for NORTH
-mov r0,#5
-mov r1,#4
-mov r2,#0
-stmdb sp!,{r0,r1}
-bl NORTH
-cmp r0,#1
-moveq r2,#1
-ldmia sp!,{r1,r0}
-bleq NORTH
-bl DISP
-swi SWI_Exit
 
 @display board {requires r0,r1,r2,r3,r4}
 DISP:

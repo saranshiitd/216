@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/btech/cs1160329/216_assignments/main_project/main_project.xpr">
+<Project Version="7" Minor="17" Path="/home/sushant101/216_assignments/main_project/main_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d11fd9260a384bc3a26442db9652b4b0"/>
@@ -75,6 +75,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/Register_File.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/proc_mem_path.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

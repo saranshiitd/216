@@ -42,7 +42,9 @@ entity Register_File is
     write_enable : in std_logic ; 
     output_1 : out std_logic_vector(31 downto 0);
     output_2 : out std_logic_vector(31 downto 0);
-    pc_output : out std_logic_vector(31 downto 0)
+    pc_output : out std_logic_vector(31 downto 0);
+    pc_input : in std_logic_vector(31 downto 0) ;
+    write_enable_pc : in std_logic 
   );
 end Register_File;
 

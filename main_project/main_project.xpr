@@ -95,7 +95,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+<<<<<<< HEAD
       <File Path="$PSRCDIR/sources_1/new/Memory.vhd">
+=======
+      <File Path="$PSRCDIR/sources_1/new/mem_proc_path.vhd">
+>>>>>>> d1612bf0624d742ac172cd7600009e152ea01c38
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

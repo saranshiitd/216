@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Feb  9 14:07:09 2018
+# Process ID: 4007
+# Current directory: /home/sushant101/216_assignments
+# Command line: vivado
+# Log file: /home/sushant101/216_assignments/vivado.log
+# Journal file: /home/sushant101/216_assignments/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sushant101/216_assignments/main_project/main_project.xpr
+INFO: [Project 1-313] Project file moved from '/home/btech/cs1160329/216_assignments/main_project' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 5819.941 ; gain = 87.617 ; free physical = 117 ; free virtual = 3932
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Feb  9 14:11:39 2018...

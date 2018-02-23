@@ -56,11 +56,11 @@ begin
     process(clk)
     begin
     if rising_edge(clk) then
-        output_1 <= register_array(to_integer(unsigned(read_addr_1)));     
+        output_1 <= register_array(to_integer(unsigned(read_addr_1)));
         output_2 <= register_array(to_integer(unsigned(read_addr_2)));
         if(write_enable = '1') then
             register_array(to_integer(unsigned(write_addr))) <= input_data ;
-        end if ;      
+        end if ;
         if(reset = '1') then 
             register_array(15) <= (others => '0') ; 
         end if;

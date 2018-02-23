@@ -37,7 +37,8 @@ entity Memory is
     write_enable : in std_logic ; 
     memory_input : in std_logic_vector(31 downto 0) ; 
     memory_output : out std_logic_vector(31 downto 0) ;
-    clk : in std_logic 
+    clk : in std_logic ;
+    read_enable : in std_logic 
    );
 end Memory;
 architecture Behavioral of Memory is

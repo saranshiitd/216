@@ -49,7 +49,8 @@ entity datapath is
     Asrc2 : in std_logic_vector ;
     Fset : in std_logic ;
     ReW : in std_logic ;
-    op : in std_logic_vector(3 downto 0) 
+    op : in std_logic_vector(3 downto 0) ;
+    Flags : in std_logic_vector(3 downto 0)
  );
 end datapath;
 
@@ -101,9 +102,13 @@ signal Instruction : std_logic_vector(31 downto 0) ;
 signal Data : std_logic_vector(31 downto 0) ;
 signal Result : std_logic_vector(31 downto 0) ;
 signal memory_read_enable : std_logic ;
+signal extended_ins_11_0 : std_logic_vector(31 downto 0) ;
+signal extended_ins_23_0 : std_logic_vector(31 downto 0) ;
+signal signal_flags : std_logic_vector(3 downto 0) ;
+
 begin
-    
-    
+    extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));
+    alu_opcode <= op ;
     
     memory_instantiation : entity work.Memory port map (
         
@@ -177,6 +182,10 @@ begin
     
    );
    
+   register_file_read_addr1 <= Instruction(19 downto 16) ;
+   register_file_write_addr <= Instruction(15 downto 12) ;
+   
+   
    process(clk)
    begin
    
@@ -225,7 +234,39 @@ begin
         else 
             memory_read_enable <= '0' ;
         end if ;
-         
+        
+        if(Rsrc = '1') then 
+            register_file_read_addr2 <= Instruction(15 downto 12) ;
+        else 
+            register_file_read_addr2 <= Instruction(3 downto 0) ;
+        end if ;
+        
+        if(M2R = '1') then 
+            register_file_input <= Data ;
+        else 
+            register_file_input <= Result ;
+        end if ;
+        
+        if(Asrc1 = '1') then 
+            alu_a <= reg_a ; 
+        else 
+            alu_a <= rf_pc_output ;
+        end if;
+        
+        if(Asrc2 = "00") then 
+            alu_b <= reg_b ;
+        elsif (Asrc2 = "01") then 
+            alu_b <= "00000000000000000000000000000100" ;
+        elsif(Asrc2 = "10") then
+            alu_b <= extended_ins_11_0 ;
+        else
+            alu_b <= extended_ins_23_0 ;
+        end if;
+        
+        if (Fset = '1') then 
+            signal_Flags <= alu_flags ;
+        end if ;
+        
         
         
         

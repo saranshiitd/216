@@ -24,7 +24,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use work.all;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
+use IEEE.NUMERIC_STD.ALL;
 
 -- Uncomment the following library declaration if instantiating
 -- any Xilinx leaf cells in this code.
@@ -50,7 +50,8 @@ entity datapath is
     Fset : in std_logic ;
     ReW : in std_logic ;
     op : in std_logic_vector(3 downto 0) ;
-    Flags : in std_logic_vector(3 downto 0)
+    Flags : in std_logic_vector(3 downto 0) ;
+    Reset_register_file : in std_logic 
  );
 end datapath;
 
@@ -92,7 +93,7 @@ signal mpp_h_sel:  std_logic;
 signal mpp_s:  std_logic ;
 signal alu_a:  std_logic_vector(31 downto 0);
 signal alu_b:  std_logic_vector(31 downto 0);
-signal alu_carry:  std_logic_vector(0 downto 0);
+signal alu_carry:  std_logic ;
 signal alu_opcode:  std_logic_vector(3 downto 0);
 signal alu_c:  std_logic_vector(31 downto 0);
 signal alu_flags: std_logic_vector(3 downto 0) ;
@@ -107,8 +108,13 @@ signal extended_ins_23_0 : std_logic_vector(31 downto 0) ;
 signal signal_flags : std_logic_vector(3 downto 0) ;
 
 begin
+
     extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));
+    extended_ins_11_0 <= std_logic_vector(resize(signed(Instruction(11 downto 0)), extended_ins_11_0'length));
+    
     alu_opcode <= op ;
+    alu_carry <=  alu_flags(1) ;
+    
     
     memory_instantiation : entity work.Memory port map (
         
@@ -118,10 +124,6 @@ begin
         memory_output => memory_output ,
         clk => clk ,
         read_enable => memory_read_enable 
-        
-        
-        
-    
     );
     
     register_file_instantiation : entity work.Register_File port map (
@@ -265,6 +267,18 @@ begin
         
         if (Fset = '1') then 
             signal_Flags <= alu_flags ;
+        end if ;
+        
+        if(RW = '1') then
+            register_file_write_enable <= '1' ;
+        else 
+            register_file_write_enable <= '0' ;
+        end if ;
+        
+        if (Reset_register_file = '1') then
+            register_file_reset <= '1' ;
+        else 
+            register_file_reset <= '0' ;
         end if ;
         
         

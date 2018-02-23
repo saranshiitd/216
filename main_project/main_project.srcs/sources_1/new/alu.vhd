@@ -35,7 +35,7 @@ use IEEE.numeric_std.ALL;
 entity alu is
   Port ( a: in std_logic_vector(31 downto 0);
          b: in std_logic_vector(31 downto 0);
-         carry: in std_logic_vector(0 downto 0);
+         carry: in std_logic ;
          opcode: in std_logic_vector(3 downto 0);
          c: out std_logic_vector(31 downto 0);
          flags: out std_logic_vector(3 downto 0)

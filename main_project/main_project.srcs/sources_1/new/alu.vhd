@@ -49,7 +49,9 @@ signal carry_out: std_logic;
 signal v: std_logic;
 signal c31: std_logic;
 signal out_signal: std_logic_vector(31 downto 0);
+signal carry_in: std_logic_vector(0 downto 0);
 begin
+    carry_in(0) <= carry;
     z<='1' when to_integer(unsigned(out_signal))=0 else
         '0';
     n<= out_signal(31);
@@ -60,9 +62,9 @@ begin
         std_logic_vector(unsigned(a)+unsigned(b)) when opcode="0100" else --add
         std_logic_vector(unsigned(a) + unsigned(not b)+ 1) when opcode(3 downto 0)="010" else --sub/cmp        
         std_logic_vector(unsigned(not a) + unsigned(b)) when opcode="0011" else --rsb            
-        std_logic_vector(unsigned(a)+unsigned(b)+unsigned(carry)) when opcode="0101" else --adc
-        std_logic_vector(unsigned(a) + unsigned(not b) + unsigned(carry) ) when opcode="0110" else --sbc
-        std_logic_vector(unsigned(not a) + unsigned(b) + unsigned(carry)) when opcode="0111" else --rsc
+        std_logic_vector(unsigned(a)+unsigned(b)+unsigned(carry_in)) when opcode="0101" else --adc
+        std_logic_vector(unsigned(a) + unsigned(not b) + unsigned(carry_in) ) when opcode="0110" else --sbc
+        std_logic_vector(unsigned(not a) + unsigned(b) + unsigned(carry_in)) when opcode="0111" else --rsc
         std_logic_vector(unsigned(a)+unsigned(b)) when opcode="1011" else --cmn
         a or b when opcode="1100" else --orr
         b when opcode="1101" else --mov

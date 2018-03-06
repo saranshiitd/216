@@ -19,3 +19,252 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
 open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 5840.738 ; gain = 73.840 ; free physical = 29346 ; free virtual = 32529
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj datapath_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:45]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_mem_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj datapath_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:45]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_mem_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top alu [current_fileset]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj datapath_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_mem_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:45]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd ignored due to errors
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+add_files -fileset sim_1 -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}}
+import_files -fileset sim_1 -force -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}}
+remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}}
+file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}
+update_compile_order -fileset sources_1
+add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}}
+add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}}
+WARNING: [filemgmt 56-12] File '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd' cannot be added to the project because it already exists in the project, skipping this file
+import_files -force -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}}
+remove_files  -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}}
+file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}
+remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/imports/new/alu.vhd}}
+file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/imports/new/alu.vhd}
+add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}}
+set_property top alu [current_fileset]
+set_property top alu [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:64]
+ERROR: [VRFC 10-408] cannot convert type std_logic to type unsigned [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-53] unsigned is illegal in an expression [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1083] near std_logic_vector ; type conversion expression type cannot be determined uniquely [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:65]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:45]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+ERROR: [VRFC 10-2101] index constraint cannot apply to non array type std_logic [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:38]
+ERROR: [VRFC 10-1504] unit alu ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:35]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+set_property top datapath [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+set_property top datapath [current_fileset]
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj datapath_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_mem_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+ERROR: [VRFC 10-1471] type error near alu_carry ; current type std_logic; expected type std_logic_vector [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:193]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:59]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj datapath_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity shifter
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Register_File
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity proc_mem_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity multiplier
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Memory
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity datapath
+ERROR: [VRFC 10-1471] type error near alu_carry ; current type std_logic; expected type std_logic_vector [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:193]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:59]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.

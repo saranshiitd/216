@@ -111,3 +111,755 @@ selectCodeEditor("datapath.vhd", 125, 149); // bF:I (JPanel:JComponent, cd:JFram
 selectCodeEditor("datapath.vhd", 125, 149); // bF:I (JPanel:JComponent, cd:JFrame)
 // Elapsed time: 70 seconds
 selectCodeEditor("datapath.vhd", 225, 211); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 147 seconds
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 36 seconds
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 340, 128); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 42 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+// Elapsed time: 50 seconds
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 3, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 95 seconds
+selectCodeEditor("datapath.vhd", 150, 196); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 115, 261); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 73 seconds
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 41 seconds
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 240); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 192 seconds
+selectCodeEditor("datapath.vhd", 153, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 32 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 64 MB (+2386kb) [00:16:23]
+// [GUI Memory]: 67 MB (+307kb) [00:17:16]
+// Elapsed time: 112 seconds
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 245, 367); // bF:I (JPanel:JComponent, cd:JFrame)
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "multiplier_output"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 315); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 38 seconds
+selectCodeEditor("datapath.vhd", 321, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 321, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 321, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 321, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 321, 528); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 325, 339); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// [GUI Memory]: 75 MB (+4459kb) [00:19:14]
+// Elapsed time: 14 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 212 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 81 MB (+2200kb) [00:23:52]
+// Elapsed time: 67 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_b"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 54, 20); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+selectCodeEditor("datapath.vhd", 224, 124); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "reg_a"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 91, 21); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 19 seconds
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 313, 133); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 33, 293); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("datapath.vhd", 259, 260); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 99, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 890 MB. GUI used memory: 29 MB. Current time: 3/6/18 10:20:46 AM IST
+// Elapsed time: 226 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, shifter - Behavioral (shifter.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, shifter - Behavioral (shifter.vhd)]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath.vhd", 100, 408); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 30 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 90 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 85 MB (+515kb) [00:33:49]
+// Elapsed time: 126 seconds
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("shifter.vhd", 175, 435); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 131 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "shifter.vhd", 2); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 57 seconds
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 159, 130); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 246, 109); // dn:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 246, 109, false, false, false, false, true); // dn:I (JPanel:JComponent, cd:JFrame) - Double Click
+selectCodeEditor(RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 246, 109); // dn:I (JPanel:JComponent, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 27 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sources_1, [HDL 9-1061] Parsing VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd into library xil_defaultlib [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:1]. ]", 20, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd;-;;-;16;-;line;-;1;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.. ]", 16, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.. ]", 16, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 17, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, launch_simulation. , [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.. ]", 17, false, false, false, false, false, true); // ah:i (JViewport:JComponent, cd:JFrame) - Double Click
+selectTab((HResource) null, (HResource) null, "Log", 2); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g:JideTabbedPane (x:aE, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+// Elapsed time: 34 seconds
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 199, 343); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10, true); // y:i (D:JPanel, cd:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 4 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Elapsed time: 72 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top alu [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET, "Move to Simulation Sources"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MOVE_TO_SIM_SET
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -fileset sim_1 -force -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}} 
+// Tcl Message: file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// x:r (cd:JFrame): Invalid Top Module: addNotify
+// Elapsed time: 12 seconds
+dismissDialog("Invalid Top Module"); // x:r (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_INSTANTIATION, "Go to Source"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_INSTANTIATION
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), mem_proc_path - mem_proc_path - Behavioral (mem_proc_path.vhd)]", 7, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceQtoS.SrcMenu_REFRESH_HIERARCHY, "Refresh Hierarchy"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// x:r (cd:JFrame): Invalid Top Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, x:r)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+dismissDialog("Invalid Top Module"); // x:r (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+// Elapsed time: 12 seconds
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+// HMemoryUtils.trashcanNow. Engine heap size: 910 MB. GUI used memory: 32 MB. Current time: 3/6/18 10:39:11 AM IST
+// Elapsed time: 23 seconds
+setFileChooser("/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 31 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}} 
+// [Engine Memory]: 926 MB (+7710kb) [00:44:25]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+// Elapsed time: 11 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 10); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 11, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), multiplier_instantiation - multiplier - Behavioral (multiplier.vhd)]", 15, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 19, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 19, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_MOVE_TO_DESIGN_SET, "Move to Design Sources"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_MOVE_TO_DESIGN_SET
+// Tcl Message: add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: import_files -force -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}} 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd}} 
+// Tcl Message: file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/imports/new/alu.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), mem_proc_path - mem_proc_path - Behavioral (mem_proc_path.vhd)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), mem_proc_path - mem_proc_path - Behavioral (mem_proc_path.vhd)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+// Elapsed time: 55 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g:JCheckBox (JPanel:JComponent, ar:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// 'c' command handler elapsed time: 4 seconds
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/imports/new/alu.vhd}} 
+// Tcl Message: file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/imports/new/alu.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+// Elapsed time: 13 seconds
+setFileChooser("/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 20 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd}} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 8, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top alu [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), multiplier_instantiation - multiplier - Behavioral (multiplier.vhd)]", 15, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), multiplier_instantiation - multiplier - Behavioral (multiplier.vhd)]", 15, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 19, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top alu [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 930 MB. GUI used memory: 32 MB. Current time: 3/6/18 10:42:06 AM IST
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'alu' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("alu.vhd", 548, 431); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("alu.vhd", 366, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 366, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 366, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 366, 433); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("alu.vhd", 238, 345); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 238, 345); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 238, 345); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 111, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 197, 101); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 43 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'alu' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectCodeEditor("alu.vhd", 315, 460); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 198, 82); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectCodeEditor("alu.vhd", 232, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath - Behavioral (datapath.vhd)]", 12, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property top datapath [get_filesets sim_1] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top_lib xil_defaultlib [get_filesets sim_1] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top datapath [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 3 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+// Elapsed time: 26 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("datapath.vhd", 265, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 265, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 265, 234); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("datapath.vhd", 158, 304); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 108, 278); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("datapath.vhd", 239, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu_carry"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 23); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 29 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("alu.vhd", 364, 275); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 66 seconds
+selectCodeEditor("alu.vhd", 97, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 23 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "alu_carry"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 151, 54); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 246, 510); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 3 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("alu.vhd", 264, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 251, 235); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 932 MB. GUI used memory: 32 MB. Current time: 3/6/18 11:29:20 AM IST

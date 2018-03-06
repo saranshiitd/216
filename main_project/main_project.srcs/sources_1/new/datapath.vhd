@@ -45,6 +45,7 @@ entity datapath is
     RW : in std_logic ;
     AW : in std_logic ;
     BW : in std_logic ;
+    CW : in std_logic ;
     Asrc1 : in std_logic ;
     Asrc2 : in std_logic_vector ;
     Fset : in std_logic ;
@@ -79,7 +80,7 @@ signal multiplier_op1 : std_logic_vector(31 downto 0) ;
 signal multiplier_op2 : std_logic_vector(31 downto 0) ;
 signal multiplier_output : std_logic_vector(31 downto 0) ;
 signal pmp_proc_inp: std_logic_vector(31 downto 0);
-signal   pmp_mem_out: std_logic_vector(31 downto 0);
+signal pmp_mem_out: std_logic_vector(31 downto 0);
 signal pmp_h:  std_logic;
 signal pmp_b:  std_logic;
 signal pmp_b_sel:  std_logic_vector(1 downto 0);
@@ -97,8 +98,9 @@ signal alu_carry:  std_logic ;
 signal alu_opcode:  std_logic_vector(3 downto 0);
 signal alu_c:  std_logic_vector(31 downto 0);
 signal alu_flags: std_logic_vector(3 downto 0) ;
-signal Reg_a : std_logic_vector(31 downto 0) ;
-signal Reg_b : std_logic_vector(31 downto 0) ;
+signal reg_a : std_logic_vector(31 downto 0) ;
+signal reg_b : std_logic_vector(31 downto 0) ;
+signal reg_c : std_logic_vector(31 downto 0) ;
 signal Instruction : std_logic_vector(31 downto 0) ;
 signal Data : std_logic_vector(31 downto 0) ;
 signal Result : std_logic_vector(31 downto 0) ;
@@ -106,6 +108,9 @@ signal memory_read_enable : std_logic ;
 signal extended_ins_11_0 : std_logic_vector(31 downto 0) ;
 signal extended_ins_23_0 : std_logic_vector(31 downto 0) ;
 signal signal_flags : std_logic_vector(3 downto 0) ;
+signal shift_amt_sig: std_logic_vector(4 downto 0);
+signal shift_type_sig: std_logic_vector(1 downto 0);
+signal shifter_output: std_logic_vector(31 downto 0);
 
 begin
 
@@ -144,11 +149,19 @@ begin
     );
     
     multiplier_instantiation : entity work.multiplier port map ( 
-        op1 => multiplier_op1 ,
-        op2 => multiplier_op2 ,
+        op1 => reg_b ,
+        op2 => reg_c ,
         output => multiplier_output
     
-    ); 
+    );
+    
+    shifter_instantiation : entity work.shifter port map ( 
+            input => reg_b ,
+            shift_amount => shift_amt_sig ,
+            shift_type => shift_type_sig,
+            output => shifter_output
+        
+        ); 
     
     proc_mem_path_instantiation : entity work.proc_mem_path port map (
         
@@ -186,7 +199,7 @@ begin
    
    register_file_read_addr1 <= Instruction(19 downto 16) ;
    register_file_write_addr <= Instruction(15 downto 12) ;
-   
+   shift_type_sig<= Instruction(6 downto 5);
    
    process(clk)
    begin
@@ -202,13 +215,17 @@ begin
         end if ;
          
         if(AW = '1') then 
-            Reg_a <= register_output1 ;
+            reg_a <= register_output1 ;
          end if ;
          
          if(BW = '1') then 
-            Reg_b <= register_output2 ;
+            reg_b <= register_output2 ;
          end if ;
          
+         if(CW = '1') then 
+            reg_c <= register_output1 ;
+         end if ;
+                  
          if(ReW = '1') then
             Result <= alu_c ;
          end if ;
@@ -255,14 +272,18 @@ begin
             alu_a <= rf_pc_output ;
         end if;
         
-        if(Asrc2 = "00") then 
+        if(Asrc2 = "000") then 
             alu_b <= reg_b ;
-        elsif (Asrc2 = "01") then 
+        elsif (Asrc2 = "001") then 
             alu_b <= "00000000000000000000000000000100" ;
-        elsif(Asrc2 = "10") then
+        elsif(Asrc2 = "010") then
             alu_b <= extended_ins_11_0 ;
-        else
+        elsif(Asrc2 = "011") then
             alu_b <= extended_ins_23_0 ;
+        elsif(Asrc2 = "100") then
+            alu_b <= multiplier_output ;
+        else
+            alu_b <= shifter_output ;
         end if;
         
         if (Fset = '1') then 

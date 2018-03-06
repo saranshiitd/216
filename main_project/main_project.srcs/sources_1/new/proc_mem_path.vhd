@@ -54,14 +54,14 @@ proc_inp_half <= proc_h_sel & proc_h_sel;
 proc_inp_byte <= proc_b_sel & proc_b_sel &  proc_b_sel & proc_b_sel;
 with h_sel select proc_h_sel <=
     proc_inp(31 downto 16) when '1' ,
-    proc_inp(15 downto 0) when '0';
+    proc_inp(15 downto 0) when others; --'0'
 with b_sel select proc_b_sel <=
-        proc_inp(31 downto 24) when "11" ,
-        proc_inp(23 downto 16) when "10",
-        proc_inp(15 downto 8) when "01",
-        proc_inp(7 downto 0) when "00"; 
+    proc_inp(31 downto 24) when "11" ,
+    proc_inp(23 downto 16) when "10",
+    proc_inp(15 downto 8) when "01",
+    proc_inp(7 downto 0) when others;  --'00'
 with x select mem_out <=
-     proc_inp_byte when "01", 
-     proc_inp_half when "10",
-     proc_inp when "00";
+    proc_inp_byte when "01", 
+    proc_inp_half when "10",
+    proc_inp when others; -- '00'
 end Behavioral;

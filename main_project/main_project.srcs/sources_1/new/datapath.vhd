@@ -47,7 +47,7 @@ entity datapath is
     BW : in std_logic ;
     CW : in std_logic ;
     Asrc1 : in std_logic ;
-    Asrc2 : in std_logic_vector ;
+    Asrc2 : in std_logic_vector(2 downto 0) ;
     Fset : in std_logic ;
     ReW : in std_logic ;
     op : in std_logic_vector(3 downto 0) ;

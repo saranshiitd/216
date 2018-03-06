@@ -1,0 +1,25 @@
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:60]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:61]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:63]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.Memory [memory_default]
+Compiling architecture behavioral of entity xil_defaultlib.Register_File [register_file_default]
+Compiling architecture behavioral of entity xil_defaultlib.multiplier [multiplier_default]
+Compiling architecture behavioral of entity xil_defaultlib.shifter [shifter_default]
+Compiling architecture behavioral of entity xil_defaultlib.proc_mem_path [proc_mem_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath
+Built simulation snapshot datapath_behav

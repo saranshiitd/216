@@ -14,6 +14,3 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_as
 INFO: [VRFC 10-307] analyzing entity alu
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity datapath
-ERROR: [VRFC 10-1471] type error near alu_carry ; current type std_logic; expected type std_logic_vector [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:193]
-ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd:59]
-INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd ignored due to errors

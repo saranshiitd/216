@@ -58,3 +58,16 @@ set_property top datapath [current_fileset]
 set_property source_mgmt_mode All [current_project]
 launch_simulation
 launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source datapath.tcl
+add_force {/datapath/multiplier_instantiation/op1} -radix dec {5 0ns}
+add_force {/datapath/multiplier_instantiation/op2} -radix dec {7 0ns}
+run all
+restart

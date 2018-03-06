@@ -2,11 +2,11 @@
 2016.4
 Jan 23 2017
 19:19:20
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd,1520299540,vhdl,,,,memory,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd,1520299540,vhdl,,,,register_file,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd,1520313481,vhdl,,,,alu,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,1520313390,vhdl,,,,datapath,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd,1520299540,vhdl,,,,mem_proc_path,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd,1520299540,vhdl,,,,multiplier,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd,1520299540,vhdl,,,,proc_mem_path,,,,,,,,
-/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd,1520299540,vhdl,,,,shifter,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Memory.vhd,1520299540,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,memory,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd,1520299540,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,register_file,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd,1520313555,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,alu,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,1520317088,vhdl,,,,datapath,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd,1520317374,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,mem_proc_path,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd,1520299540,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,multiplier,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd,1520317229,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,proc_mem_path,,,,,,,,
+/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd,1520299540,vhdl,/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,shifter,,,,,,,,

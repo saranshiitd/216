@@ -53,20 +53,20 @@ begin
 x<= h & b;
 with s select mem_inp_half <=
     (15 downto 0 => mem_h_sel(15)) & mem_h_sel when '1',
-    (15 downto 0 => '0') & mem_h_sel when '0';
+    (15 downto 0 => '0') & mem_h_sel when others; -- '0'
 with s select mem_inp_byte <=
         (23 downto 0 => mem_b_sel(7)) & mem_b_sel when '1',
-        (23 downto 0 => '0') & mem_b_sel when '0';
+        (23 downto 0 => '0') & mem_b_sel when others; --'0'
 with h_sel select mem_h_sel <=
     mem_inp(31 downto 16) when '1' ,
-    mem_inp(15 downto 0) when '0';
+    mem_inp(15 downto 0) when others; --'0'
 with b_sel select mem_b_sel <=
         mem_inp(31 downto 24) when "11" ,
         mem_inp(23 downto 16) when "10",
         mem_inp(15 downto 8) when "01",
-        mem_inp(7 downto 0) when "00"; 
+        mem_inp(7 downto 0) when others; --'00'
 with x select proc_out <=
      mem_inp_byte when "01", 
      mem_inp_half when "10",
-     mem_inp when "00";
+     mem_inp when others; --'00'
 end Behavioral;

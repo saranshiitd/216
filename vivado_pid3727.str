@@ -863,3 +863,404 @@ selectCodeEditor("alu.vhd", 251, 235); // bF:I (JPanel:JComponent, cd:JFrame)
 // TclEventType: DG_ANALYSIS_MSG_RESET
 // TclEventType: DG_UPDATE_GRAPH
 // HMemoryUtils.trashcanNow. Engine heap size: 932 MB. GUI used memory: 32 MB. Current time: 3/6/18 11:29:20 AM IST
+// Elapsed time: 3257 seconds
+selectCodeEditor("alu.vhd", 257, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 131, 227); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu.vhd", 238, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 150 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [XSIM 43-3189] "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" Line 50. Port asrc2 in top design unit datapath is unconstrained.  
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [XSIM 43-3189] "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" Line 50. Port asrc2 in top design unit datapath is unconstrained.  
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 5 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("datapath.vhd", 255, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 255, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 255, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 255, 409); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("datapath.vhd", 240, 346); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 240, 346); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 240, 346); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 165, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 165, 127); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 197, 264); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 17 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "asrc"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 235, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 235, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 235, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 235, 327); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("datapath.vhd", 256, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 256, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 212, 354); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd:55] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit datapath in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation]", 4); // ah:i (JViewport:JComponent, cd:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1]", 5); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd:55]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd;-;;-;16;-;line;-;55;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd:58] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit datapath in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd:58]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd;-;;-;16;-;line;-;58;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:54] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit datapath in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 8 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:54]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd;-;;-;16;-;line;-;54;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 47 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:54]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd;-;;-;16;-;line;-;54;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_path.vhd", 323, 344); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("mem_proc_path.vhd", 323, 344); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// TclEventType: LAUNCH_SIM
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:57] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit datapath in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+// 'd' command handler elapsed time: 8 seconds
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:57]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd;-;;-;16;-;line;-;57;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_path.vhd", 342, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// TclEventType: LAUNCH_SIM
+// Tcl Message: Vivado Simulator 2016.4 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved. Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip --snapshot datapath_behav xil_defaultlib.datapath -log elaborate.log  Using 8 slave threads. Starting static elaboration ERROR: [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:60] ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit datapath in library work failed. 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' 
+// Tcl Message: ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information. ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation. 
+// Tcl Message: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors. 
+// HOptionPane Error: " ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.<br> (Run Simulation)"
+// a:a (cd:JFrame): Critical Messages: addNotify
+selectButton("RDIResource.ProgressDialog_ERROR_ENCOUNTERED_PLEASE_SEE_TCL_OK", "OK"); // JButton:AbstractButton (JPanel:JComponent, F:JDialog)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f:a (JPanel:JComponent, a:a)
+dismissDialog("Critical Messages"); // a:a (cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Simulation, sim_1, [VRFC 10-2335] selected assignment statement does not cover all choices. 'others' clause is needed [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd:60]. ]", 6, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd;-;;-;16;-;line;-;60;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 11, false); // u:K (t:D, cd:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// TclEventType: FILE_SET_CHANGE
+// e:bt (cd:JFrame):  Run Simulation : addNotify
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-37] Inspecting design source files for 'datapath' in fileset 'sim_1'... INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '0' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' 
+// Tcl Message: Built simulation snapshot datapath_behav 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message:  ****** Webtalk v2016.4 (64-bit)   **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017   **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source /home/sushant/Desktop/col216 -notrace couldn't read file "/home/sushant/Desktop/col216": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Tue Mar  6 11:53:02 2018... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "datapath_behav -key {Behavioral:sim_1:Functional:datapath} -tclbatch {datapath.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2016.4 
+// TclEventType: SIMULATION_CREATE_SIMULATION_OBJECT
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// Tcl Message: Time resolution is 1 ps 
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: WAVEFORM_OPEN_WCFG
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// [Engine Memory]: 974 MB (+1564kb) [01:58:10]
+// Waveform: addNotify
+// Waveform: addNotify
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// Tcl Message: source datapath.tcl 
+// Tcl Message: # set curr_wave [current_wave_config] # if { [string length $curr_wave] == 0 } { #   if { [llength [get_objects]] > 0} { #     add_wave / #     set_property needs_save false [current_wave_config] #   } else { #      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console." #   } # } 
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: WAVEFORM_UPDATE_TITLE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_STOPPED
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// Tcl Message: # run 1000ns 
+// Tcl Message: ERROR: Array sizes do not match, left array has 32 elements, right array has 64 elements Time: 0 ps  Iteration: 0  Process: /datapath/multiplier_instantiation/line__45   File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd  HDL Line: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd:45 
+// Tcl Message: INFO: [USF-XSim-96] XSim completed. Design snapshot 'datapath_behav' loaded. INFO: [USF-XSim-97] XSim simulation ran for 1000ns 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 5968.934 ; gain = 49.844 ; free physical = 28094 ; free virtual = 31642 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e:bt (cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 982 MB. GUI used memory: 37 MB. Current time: 3/6/18 11:53:06 AM IST
+// Elapsed time: 24 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "op1[31:0] ; UUUUUUUU ; Array", 0, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "op1[31:0] ; UUUUUUUU ; Array", 0, "UUUUUUUU", 1, true, false, false, false, true, false); // l:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:q (cd:JFrame): Force Constant:  /datapath/multiplier_instantiation/op1: addNotify
+selectComboBox(PAResourceQtoS.SimulationForceSettingsDialog_VALUE_RADIX, "Signed Decimal", 3); // e:JComboBox (JPanel:JComponent, a:q)
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "5"); // ak:JTextField (JPanel:JComponent, a:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+// Tcl Message: add_force {/datapath/multiplier_instantiation/op1} -radix dec {5 0ns} 
+dismissDialog("Force Constant:  /datapath/multiplier_instantiation/op1"); // a:q (cd:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "op2[31:0] ; UUUUUUUU ; Array", 1, "UUUUUUUU", 1, true, false, false, false, true, false); // l:ab (JViewport:JComponent, cd:JFrame) - Popup Trigger - Node
+selectMenu((HResource) null, "Radix"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem((HResource) null, "Force Constant..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// TclEventType: SIMULATION_SHOW_FORCE_DIALOG
+// a:q (cd:JFrame): Force Constant:  /datapath/multiplier_instantiation/op2: addNotify
+setText(PAResourceQtoS.SimulationForceSettingsDialog_FORCE_VALUE, "7"); // ak:JTextField (JPanel:JComponent, a:q)
+selectComboBox(PAResourceQtoS.SimulationForceSettingsDialog_VALUE_RADIX, "Signed Decimal", 3); // e:JComboBox (JPanel:JComponent, a:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, a:q)
+// Tcl Message: add_force {/datapath/multiplier_instantiation/op2} -radix dec {7 0ns} 
+dismissDialog("Force Constant:  /datapath/multiplier_instantiation/op2"); // a:q (cd:JFrame)
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RUN_ALL, "simulation_live_run_all"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Tcl Message: run all 
+// Tcl Message: ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue. 
+// Elapsed time: 10 seconds
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // y:JideButton (g:CommandBar, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART
+// bt:g (cd:JFrame):  Restart : addNotify
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_CLEAR_CURRENT_LINE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: SIMULATION_UPDATE_LATEST_TIME
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// TclEventType: SIMULATION_UPDATE_SIMULATION_STATE
+// TclEventType: SIMULATION_UPDATE_SCOPE_TREE
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_MODEL_EVENT
+// TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_UPDATE_COMMANDS
+// TclEventType: SIMULATION_CURRENT_SCOPE_CHANGED
+// Tcl Message: restart 
+// Tcl Message: INFO: [Simtcl 6-17] Simulation restarted 
+selectButton(PAResourceCommand.PACommandNames_SIMULATION_LIVE_RESTART, "simulation_live_restart"); // y:JideButton (g:CommandBar, cd:JFrame)
+dismissDialog("Restart"); // bt:g (cd:JFrame)
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// HMemoryUtils.trashcanNow. Engine heap size: 997 MB. GUI used memory: 36 MB. Current time: 3/6/18 11:54:21 AM IST
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+// Elapsed time: 18 seconds
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "mpp_h ; U ; Logic", 27, "Logic", 2, false); // l:ab (JViewport:JComponent, cd:JFrame)
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "rf_pc_input[31:0] ; UUUUUUUU ; Array", 27, "Array", 2, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
+selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node

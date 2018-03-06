@@ -43,6 +43,7 @@ entity alu is
 end alu;
 
 architecture Behavioral of alu is
+
 signal z: std_logic;
 signal n: std_logic;
 signal carry_out: std_logic;
@@ -51,6 +52,11 @@ signal c31: std_logic;
 signal out_signal: std_logic_vector(31 downto 0);
 signal carry_in: std_logic_vector(0 downto 0);
 begin
+
+    
+      
+      
+      
     carry_in(0) <= carry;
     z<='1' when to_integer(unsigned(out_signal))=0 else
         '0';
@@ -70,8 +76,18 @@ begin
         b when opcode="1101" else --mov
         not b when opcode="1111" else --mvn
         a and (not b) when opcode="1110"; --bic
+        
+      --  operand2 <= std_logic_vector(unsigned(not b) + 1) when  opcode(3 downto 0) = "010" else 
+      --              std_logic_vector(unsigned(b)+unsigned(carry_in)) when opcode = "0101" else 
+      --              std_logic_vector(unsigned(not b)+unsigned()) 
+          
                 
-                      
+    v <= carry_out xor c31 ;                  
     c<=out_signal; 
     flags<=z & n & carry_out & v;
+
+
+
+
+
 end Behavioral;

@@ -41,6 +41,8 @@ entity datapath is
     IW : in std_logic ; 
     DW : in std_logic ;
     M2R : in std_logic ;
+    R1src: in std_logic;
+    Wsrc: in std_logic;
     Rsrc : in std_logic ;
     RW : in std_logic ;
     AW : in std_logic ;
@@ -197,8 +199,8 @@ begin
     
    );
    
-   register_file_read_addr1 <= Instruction(19 downto 16) ;
-   register_file_write_addr <= Instruction(15 downto 12) ;
+--   register_file_read_addr1 <= Instruction(19 downto 16) ;
+--   register_file_write_addr <= Instruction(15 downto 12) ;
    shift_type_sig<= Instruction(6 downto 5);
    
    process(clk)
@@ -259,6 +261,19 @@ begin
         else 
             register_file_read_addr2 <= Instruction(3 downto 0) ;
         end if ;
+        
+        if(R1src = '1') then 
+              register_file_read_addr1 <= Instruction(19 downto 16) ;
+           else 
+                register_file_read_addr1 <= Instruction(15 downto 12) ;
+         end if ;
+        
+        if(Wsrc = '1') then 
+              register_file_write_addr <= Instruction(15 downto 12) ;
+        else 
+              register_file_write_addr <= Instruction(19 downto 16) ;
+        end if ;
+                 
         
         if(M2R = '1') then 
             register_file_input <= Data ;

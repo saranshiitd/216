@@ -633,3 +633,5 @@ run all
 ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
 restart
 INFO: [Simtcl 6-17] Simulation restarted
+add_bp {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} 45
+remove_bps -file {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} -line 45

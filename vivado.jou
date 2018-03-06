@@ -71,3 +71,5 @@ add_force {/datapath/multiplier_instantiation/op1} -radix dec {5 0ns}
 add_force {/datapath/multiplier_instantiation/op2} -radix dec {7 0ns}
 run all
 restart
+add_bp {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} 45
+remove_bps -file {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} -line 45

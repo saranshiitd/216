@@ -1264,3 +1264,42 @@ selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TA
 selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
 selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
 selectTreeTable(PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, "register_file_input[31:0] ; UUUUUUUU ; Array", 27, "UUUUUUUU", 1, true); // l:ab (JViewport:JComponent, cd:JFrame) - Node
+// TclEventType: SIMULATION_ADD_BREAKPOINT
+// Tcl Message: add_bp {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} 45 
+// TclEventType: SIMULATION_DELETE_BREAKPOINT
+// Tcl Message: remove_bps -file {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd} -line 45 
+// HMemoryUtils.trashcanNow. Engine heap size: 997 MB. GUI used memory: 36 MB. Current time: 3/6/18 12:24:22 PM IST
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 2486 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // u:aE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "multiplier.vhd", 0); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// [GUI Memory]: 90 MB (+140kb) [02:42:28]
+// Elapsed time: 107 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "rsrc"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 239, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 201, 485); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 54 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 314, 382); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 27, 145); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 24 seconds
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

@@ -41,6 +41,8 @@ entity datapath is
     IW : in std_logic ; 
     DW : in std_logic ;
     M2R : in std_logic ;
+    R1src: in std_logic;
+    Wsrc: in std_logic;
     Rsrc : in std_logic ;
     RW : in std_logic ;
     AW : in std_logic ;
@@ -111,6 +113,7 @@ signal signal_flags : std_logic_vector(3 downto 0) ;
 signal shift_amt_sig: std_logic_vector(4 downto 0);
 signal shift_type_sig: std_logic_vector(1 downto 0);
 signal shifter_output: std_logic_vector(31 downto 0);
+signal bram_we: std_logic_vector(3 downto 0);
 
 begin
 
@@ -119,16 +122,17 @@ begin
     
     alu_opcode <= op ;
     alu_carry <=  alu_flags(1) ;
+    bram_we <= "1111" when memory_write_enable='1' else  "0000";
     
-    
-    memory_instantiation : entity work.Memory port map (
+    memory_instantiation : entity work.BRAM_wrapper port map (
         
-        address => memory_address ,
-        write_enable => memory_write_enable ,
-        memory_input => selected_memory_input ,
-        memory_output => memory_output ,
-        clk => clk ,
-        read_enable => memory_read_enable 
+        BRAM_PORTA_addr => memory_address ,
+        BRAM_PORTA_we => bram_we ,
+        BRAM_PORTA_din => selected_memory_input ,
+        BRAM_PORTA_dout => memory_output ,
+        BRAM_PORTA_clk => clk ,
+        BRAM_PORTA_en => '1',
+        BRAM_PORTA_rst => '0'
     );
     
     register_file_instantiation : entity work.Register_File port map (
@@ -197,8 +201,8 @@ begin
     
    );
    
-   register_file_read_addr1 <= Instruction(19 downto 16) ;
-   register_file_write_addr <= Instruction(15 downto 12) ;
+--   register_file_read_addr1 <= Instruction(19 downto 16) ;
+--   register_file_write_addr <= Instruction(15 downto 12) ;
    shift_type_sig<= Instruction(6 downto 5);
    
    process(clk)
@@ -259,6 +263,19 @@ begin
         else 
             register_file_read_addr2 <= Instruction(3 downto 0) ;
         end if ;
+        
+        if(R1src = '1') then 
+              register_file_read_addr1 <= Instruction(19 downto 16) ;
+           else 
+                register_file_read_addr1 <= Instruction(15 downto 12) ;
+         end if ;
+        
+        if(Wsrc = '1') then 
+              register_file_write_addr <= Instruction(15 downto 12) ;
+        else 
+              register_file_write_addr <= Instruction(19 downto 16) ;
+        end if ;
+                 
         
         if(M2R = '1') then 
             register_file_input <= Data ;

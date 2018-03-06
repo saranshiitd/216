@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Feb 14 18:46:38 2018
+# Process ID: 8302
+# Current directory: /home/sushant101/216_assignments
+# Command line: vivado
+# Log file: /home/sushant101/216_assignments/vivado.log
+# Journal file: /home/sushant101/216_assignments/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/sushant101/216_assignments/main_project/main_project.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 5816.156 ; gain = 74.594 ; free physical = 208 ; free virtual = 5735
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 14 21:54:36 2018...

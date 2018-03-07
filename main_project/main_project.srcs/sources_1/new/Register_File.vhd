@@ -64,6 +64,9 @@ begin
         if(reset = '1') then 
             register_array(15) <= (others => '0') ; 
         end if;
+        if write_enable_pc = '1' then 
+            register_array(15) <= pc_input ; 
+        end if ;
     end if;
     end process;
 

@@ -53,11 +53,12 @@ type REGISTER_ARRAY_TYPE is array (0 to 15) of std_logic_vector(31 downto 0);
 signal register_array : REGISTER_ARRAY_TYPE ;
 begin
     pc_output <= register_array(15);
+    output_1 <= register_array(to_integer(unsigned(read_addr_1)));
+    output_2 <= register_array(to_integer(unsigned(read_addr_2)));
     process(clk)
     begin
     if rising_edge(clk) then
-        output_1 <= register_array(to_integer(unsigned(read_addr_1)));
-        output_2 <= register_array(to_integer(unsigned(read_addr_2)));
+        
         if(write_enable = '1') then
             register_array(to_integer(unsigned(write_addr))) <= input_data ;
         end if ;
@@ -71,3 +72,4 @@ begin
     end process;
 
 end Behavioral;
+

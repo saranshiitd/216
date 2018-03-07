@@ -39,8 +39,10 @@ entity multiplier is  Port (
 end multiplier;
 
 architecture Behavioral of multiplier is
-
+signal temp_output : std_logic_vector(63 downto 0) ;
 begin
     --output <= op1*op2 ;
-    output <= std_logic_vector( signed(op1) * signed(op2) );
+    temp_output <= std_logic_vector( signed(op1) * signed(op2) );
+    output <= temp_output(31 downto 0) ;
 end Behavioral;
+

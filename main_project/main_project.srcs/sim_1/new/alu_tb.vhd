@@ -33,7 +33,7 @@ use ieee.numeric_std.all;
 --use UNISIM.VComponents.all;
 
 entity alu_tb is
---  Port ( );
+-- Port ( );
 end alu_tb;
 
 architecture Behavioral of alu_tb is
@@ -47,15 +47,15 @@ architecture Behavioral of alu_tb is
              flags: out std_logic_vector(3 downto 0)
         );
     END COMPONENT;
-    signal clk : std_logic := '0'; --remove later
+--    signal clk : std_logic := '0'; --remove later
     --Inputs
-    signal a: in std_logic_vector(31 downto 0) := (others => '0');
-    signal b: in std_logic_vector(31 downto 0) := (others => '0');
-    signal carry: in std_logic := '0' ;
-    signal opcode: in std_logic_vector(3 downto 0) := (others => '0');
+    signal a: std_logic_vector(31 downto 0) := (others => '0');
+    signal b: std_logic_vector(31 downto 0) := (others => '0');
+    signal carry: std_logic := '0' ;
+    signal opcode: std_logic_vector(3 downto 0) := (others => '0');
     -- Outputs
-    signal c: out std_logic_vector(31 downto 0) := (others => '0');
-    signal flags: out std_logic
+    signal c: std_logic_vector(31 downto 0) := (others => '0');
+    signal flags: std_logic_vector(3 downto 0);
      -- Clock period definitions
      constant clk_period : time := 10 ns;
      signal err_cnt_signal : integer := 1;
@@ -64,9 +64,9 @@ architecture Behavioral of alu_tb is
      uut: alu PORT MAP (
           a => a,
           b => b,
-          carry => carry ;
-          opcode => opcode;
-          c => c;
+          carry => carry ,
+          opcode => opcode,
+          c => c,
           flags => flags
         );
 
@@ -79,11 +79,9 @@ architecture Behavioral of alu_tb is
       --------------------- pre-case 0 ---------------------------
 		------------------------------------------------------------
 		
-		-- Set clock to be fast, initialize in1=01,in2=23 and initiate multiplication
-		display_button <= '1';
 		-- Set inputs
-		a <= std_logic_vector(to_unsigned(12, 32));
-		b <= std_logic_vector(to_unsigned(7, 32));
+		a <= std_logic_vector(to_signed(12, 32));
+		b <= std_logic_vector(to_signed(-7, 32));
 		carry <= '0';
 		opcode <= "0100"; --add
 		wait for clk_period;
@@ -93,23 +91,88 @@ architecture Behavioral of alu_tb is
 		-------------------------------------------------------------
 		
 		
-		assert (c = std_logic_vector(to_unsigned(19, 32));) report "Error: case 0 c incorrect";
+		assert (c = std_logic_vector(to_signed(5, 32))) report "Error: case 0 c (add) incorrect";
+        
+        ------------------------------------------------------------
+      --------------------- pre-case 1 ---------------------------
+		------------------------------------------------------------
+		
+		-- Set inputs
+		a <= std_logic_vector(to_signed(12, 32));
+		b <= std_logic_vector(to_signed(-7, 32));
+		carry <= '0';
+		opcode <= "0010"; --sub
+		wait for clk_period;
+		
+      		-------------------------------------------------------------
+		---------------------  case 1 -------------------------------
+		-------------------------------------------------------------
+		
+		
+		assert (c = std_logic_vector(to_signed(19, 32))) report "Error: case 1 c (sub) incorrect";
+
+        ------------------------------------------------------------
+      --------------------- pre-case 2 ---------------------------
+		------------------------------------------------------------
+		
+		-- Set inputs
+		a <= std_logic_vector(to_signed(12, 32));
+		b <= std_logic_vector(to_signed(-13, 32));
+		carry <= '1';
+		opcode <= "0101"; --add with carry (adc)
+		wait for clk_period;
+		
+      		-------------------------------------------------------------
+		---------------------  case 2 -------------------------------
+		-------------------------------------------------------------
+		
+		
+		assert (c = std_logic_vector(to_signed(0, 32))) report "Error: case 2 c (adc) incorrect";
+        assert(flags(3 downto 2)="10") report "case 2 flag(Z) incorrect";
+
+        ------------------------------------------------------------
+      --------------------- pre-case 3 ---------------------------
+		------------------------------------------------------------
+		
+		-- Set inputs
+--		a <= std_logic_vector(to_signed(12, 32));
+--		b <= std_logic_vector(to_signed(7, 32));
+        a <= "11111111111111111111111111111111";
+        b <= "00000000000000000000000000000001";
+		carry <= '0';
+		opcode <= "0100"; --add
+		wait for clk_period;
+		
+      		-------------------------------------------------------------
+		---------------------  case 3 -------------------------------
+		-------------------------------------------------------------
+		
+--		assert (c = std_logic_vector(to_signed(19, 32))) report "Error: case 3 c incorrect";
+        assert(flags(1)='1') report "case 3 flag(C) incorrect";
+
+        ------------------------------------------------------------
+      --------------------- pre-case 4 ---------------------------
+		------------------------------------------------------------
+		
+		-- Set inputs
+		a <= std_logic_vector(to_signed(2**30 + 2, 32));
+		b <= std_logic_vector(to_signed(-(2**30), 32));
+		carry <= '0';
+		opcode <= "0010"; --sub
+		wait for clk_period;
+		
+      		-------------------------------------------------------------
+		---------------------  case 4 -------------------------------
+		-------------------------------------------------------------
+		
+		
+--		assert (c = std_logic_vector(to_signed(19, 32))) report "Error: case 4 c incorrect";
+        assert(flags(1)='0') report "case 4 flag(C) incorrect";
+        assert(flags(0)='1') report "case 4 flag(V) incorrect";
 
 
   		-------------------------add more test cases---------------------------------------------
 		
-		err_cnt_signal <= err_cnt;		
-		-- summary of all the tests
-		if (err_cnt=0) then
-			 assert false
-			 report "Testbench of ALU completed successfully!"
-			 severity note;
-		else
-			 assert false
-			 report "Something wrong, try again"
-			 severity error;
-		end if;
-
       -- end of tb 
 		wait for clk_period*100;
 
@@ -117,6 +180,6 @@ architecture Behavioral of alu_tb is
    end process;
 
 
-END;
+--END;
 
 end Behavioral;

@@ -124,7 +124,7 @@ begin
     alu_carry <=  alu_flags(1) ;
     bram_we <= "1111" when memory_write_enable='1' else  "0000";
     
-    memory_instantiation : entity work.BRAM_wrapper port map (
+    memory_instantiation : entity work.BRAM2_wrapper port map (
         
         BRAM_PORTA_addr => memory_address ,
         BRAM_PORTA_we => bram_we ,

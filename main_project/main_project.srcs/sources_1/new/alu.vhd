@@ -51,23 +51,22 @@ signal v: std_logic;
 signal c31: std_logic;
 signal out_signal: std_logic_vector(31 downto 0);
 signal carry_in: std_logic_vector(0 downto 0);
+signal a_mod: std_logic_vector(31 downto 0);
+signal b_mod: std_logic_vector(31 downto 0);
+signal extra_carry: std_logic;
 begin
-
-    
-      
-      
-      
     carry_in(0) <= carry;
     z<='1' when to_integer(unsigned(out_signal))=0 else
         '0';
     n<= out_signal(31);
-    c31<= a(31) xor b(31) xor out_signal(31);
-    carry_out<= (a(31) and b(31)) or  (a(31) and c31) or (b(31) and c31);
-    out_signal<= a and b when opcode(3 downto 0)="000" else --and/tst
-        a xor b when opcode(3 downto 0)="001" else --eor/teq
+    c31<= a_mod(31) xor b_mod(31) xor out_signal(31);
+    carry_out<= (a_mod(31) and b_mod(31)) or  (a_mod(31) and c31) or (b_mod(31) and c31);
+    v<= carry_out xor c31;
+    out_signal<= a and b when opcode(2 downto 0)="000" else --and/tst
+        a xor b when opcode(2 downto 0)="001" else --eor/teq
         std_logic_vector(unsigned(a)+unsigned(b)) when opcode="0100" else --add
-        std_logic_vector(unsigned(a) + unsigned(not b)+ 1) when opcode(3 downto 0)="010" else --sub/cmp        
-        std_logic_vector(unsigned(not a) + unsigned(b)) when opcode="0011" else --rsb            
+        std_logic_vector(unsigned(a) + unsigned(not b)+ 1) when opcode(2 downto 0)="010" else --sub/cmp        
+        std_logic_vector(unsigned(not a)+ 1  + unsigned(b)) when opcode="0011" else --rsb            
         std_logic_vector(unsigned(a)+unsigned(b)+unsigned(carry_in)) when opcode="0101" else --adc
         std_logic_vector(unsigned(a) + unsigned(not b) + unsigned(carry_in) ) when opcode="0110" else --sbc
         std_logic_vector(unsigned(not a) + unsigned(b) + unsigned(carry_in)) when opcode="0111" else --rsc
@@ -77,9 +76,15 @@ begin
         not b when opcode="1111" else --mvn
         a and (not b) when opcode="1110"; --bic
         
-      --  operand2 <= std_logic_vector(unsigned(not b) + 1) when  opcode(3 downto 0) = "010" else 
-      --              std_logic_vector(unsigned(b)+unsigned(carry_in)) when opcode = "0101" else 
-      --              std_logic_vector(unsigned(not b)+unsigned()) 
+        b_mod <= std_logic_vector(unsigned(not b) + 1) when  opcode(2 downto 0) = "010" else --sub/cmp 
+                    std_logic_vector(unsigned(b)+unsigned(carry_in)) when opcode = "0101" else  -- adc
+                    std_logic_vector(unsigned(not b)+unsigned(carry_in)) when opcode = "0110" else --sbc
+                    b;
+        a_mod <= std_logic_vector(unsigned(not a) + 1) when  opcode(3 downto 0) = "0011" else --rsb                                   
+                                        std_logic_vector(unsigned(not a)+unsigned(carry_in)) when opcode = "0111" else --rsc
+                                        a;
+        
+                                        
           
                 
     v <= carry_out xor c31 ;                  

@@ -72,3 +72,35 @@ source mem_proc_tb.tcl
 close_sim
 launch_simulation
 source mem_proc_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+current_sim simulation_9
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+add_wave {{/alu_tb/uut}} 
+relaunch_sim
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+add_wave {{/alu_tb/uut}} 
+relaunch_sim
+close_sim
+launch_simulation
+source alu_tb.tcl

@@ -58,9 +58,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="BRAM2_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
@@ -85,9 +85,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="BRAM_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="ip/BRAM_blk_mem_gen_0_0/BRAM_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="hdl/BRAM.vhd"/>
+        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="BRAM_ooc.xdc"/>
       </File>
       <File Path="$PSRCDIR/sources_1/new/shifter.vhd">
         <FileInfo>
@@ -140,6 +140,13 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/BRAM2/ip/BRAM2_blk_mem_gen_0_0/data.coe">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/controller_fsm.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>

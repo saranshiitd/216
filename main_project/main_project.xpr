@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/btech/cs1160326/216_assignments/main_project/main_project.xpr">
+<Project Version="7" Minor="17" Path="/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d11fd9260a384bc3a26442db9652b4b0"/>
@@ -58,18 +58,12 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="BRAM2_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
-
-
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="BRAM2_ooc.xdc"/>
+        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/BRAM2/hdl/BRAM2_wrapper.vhd">
         <FileInfo>
@@ -91,15 +85,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="ip/BRAM_blk_mem_gen_0_0/BRAM_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="hdl/BRAM.vhd"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="BRAM_ooc.xdc"/>
-
-        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="hdl/BRAM.vhd"/>
-        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="BRAM_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="ip/BRAM_blk_mem_gen_0_0/BRAM_blk_mem_gen_0_0.xci"/>
-
       </File>
       <File Path="$PSRCDIR/sources_1/new/shifter.vhd">
         <FileInfo>
@@ -156,11 +144,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-
       <File Path="$PSRCDIR/sources_1/new/controller_fsm.vhd">
-
-      <File Path="$PSRCDIR/sources_1/new/FlagCheckUnit.vhd">
-
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

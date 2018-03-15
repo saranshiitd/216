@@ -49,10 +49,13 @@ entity Register_File is
 end Register_File;
 
 architecture Behavioral of Register_File is
-type REGISTER_ARRAY_TYPE is array (0 to 15) of std_logic_vector(31 downto 0);
+type REGISTER_ARRAY_TYPE is array (0 to 14) of std_logic_vector(31 downto 0);
+
 signal register_array : REGISTER_ARRAY_TYPE ;
+signal pc: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 begin
-    pc_output <= register_array(15);
+    --pc_output <= register_array(15);
+    pc_output <= pc;
     output_1 <= register_array(to_integer(unsigned(read_addr_1)));
     output_2 <= register_array(to_integer(unsigned(read_addr_2)));
     process(clk)
@@ -63,10 +66,12 @@ begin
             register_array(to_integer(unsigned(write_addr))) <= input_data ;
         end if ;
         if(reset = '1') then 
-            register_array(15) <= (others => '0') ; 
+            --register_array(15) <= (others => '0') ; 
+            pc <= (others => '0');
         end if;
         if write_enable_pc = '1' then 
-            register_array(15) <= pc_input ; 
+            --register_array(15) <= pc_input ; 
+            pc <= pc_input ;
         end if ;
     end if;
     end process;

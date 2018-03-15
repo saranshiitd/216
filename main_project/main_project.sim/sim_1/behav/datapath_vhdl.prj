@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../main_project.ip_user_files/bd/BRAM2/hdl/BRAM2.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/shifter.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/Register_File.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/proc_mem_path.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/multiplier.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/mem_proc_path.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/alu.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sim_1/imports/hdl/BRAM2_wrapper.vhd"
+vhdl xil_defaultlib  "../../../main_project.srcs/sources_1/new/datapath.vhd"
+
+# Do not sort compile order
+nosort

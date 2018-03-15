@@ -35,7 +35,7 @@ entity datapath is
  Port ( 
     clk : in std_logic ;
     PW : in std_logic ;
-    IorD : in std_logic_vector("1 downto 0") ;
+    IorD : in std_logic_vector(1 downto 0) ;
     MR : in std_logic ;
     MW : in std_logic ;
     IW : in std_logic ; 
@@ -54,7 +54,16 @@ entity datapath is
     ReW : in std_logic ;
     op : in std_logic_vector(3 downto 0) ;
     Flags : in std_logic_vector(3 downto 0) ;
-    Reset_register_file : in std_logic 
+    Reset_register_file : in std_logic; 
+    reg_read1: out std_logic_vector(31 downto 0);
+    reg_read2: out std_logic_vector(31 downto 0);
+    alu_out:out std_logic_vector(31 downto 0);
+    a_out: out std_logic_vector(31 downto 0);
+    b_out: out std_logic_vector(31 downto 0);
+    c_out: out std_logic_vector(31 downto 0);
+    ir_out : out std_logic_vector(31 downto 0);
+    dr_out: out std_logic_vector(31 downto 0);
+    res_out: out std_logic_vector(31 downto 0)
  );
 end datapath;
 
@@ -64,7 +73,7 @@ signal selected_memory_input : std_logic_vector(31 downto 0) ;
 signal selected_alu_first_operand : std_logic_vector(31 downto 0) ;
 signal selected_alu_second_operand : std_logic_vector(31 downto 0) ;
 signal selected_register_number : std_logic_vector(3 downto 0) ;
-signal memory_address : std_logic_vector(3 downto 0) ;
+signal memory_address : std_logic_vector(31 downto 0) ;
 signal memory_write_enable : std_logic ;
 signal memory_output : std_logic_vector(31 downto 0) ;
 signal register_file_input : std_logic_vector(31 downto 0) ;
@@ -120,10 +129,24 @@ begin
     extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));
     extended_ins_11_0 <= std_logic_vector(resize(signed(Instruction(11 downto 0)), extended_ins_11_0'length));
     
+    --outputs for testing
+    a_out<= reg_a;
+    b_out<= reg_b;
+    c_out<= reg_c;
+    ir_out<= Instruction;
+    dr_out<= data;
+    alu_out<= alu_c;
+    reg_read1<=register_file_read_addr1;
+    reg_read2<=register_file_read_addr2;
+    res_out<=result;
+    
+    
+    
     alu_opcode <= op ;
     alu_carry <=  alu_flags(1) ;
     bram_we <= "1111" when memory_write_enable='1' else  "0000";
-    
+    pmp_proc_inp <= reg_b;
+    selected_memory_input<=pmp_mem_out;
     memory_instantiation : entity work.BRAM2_wrapper port map (
         
         BRAM_PORTA_addr => memory_address ,
@@ -235,11 +258,14 @@ begin
          end if ;
          
          if(IorD = "00") then 
-            pmp_proc_inp <= rf_pc_output ;
+            --pmp_proc_inp <= rf_pc_output ;
+            memory_address <= rf_pc_output ;
          elsif (IorD ="01") then 
-            pmp_proc_inp <= Result ;
-         else   
-            pmp_proc_inp <= reg_a ;
+            --pmp_proc_inp <= Result ;
+            memory_address <= Result;
+         else
+            memory_address <= reg_a;   
+            --pmp_proc_inp <= reg_a ;
          end if ;
          
          if(PW = '1') then

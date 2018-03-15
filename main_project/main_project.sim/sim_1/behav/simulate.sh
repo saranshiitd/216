@@ -9,4 +9,4 @@ then
 exit $RETVAL
 fi
 }
-ExecStep $xv_path/bin/xsim alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch alu_tb.tcl -log simulate.log
+ExecStep $xv_path/bin/xsim datapath_behav -key {Behavioral:sim_1:Functional:datapath} -tclbatch datapath.tcl -log simulate.log

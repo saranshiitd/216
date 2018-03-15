@@ -35,13 +35,13 @@ entity datapath is
  Port ( 
     clk : in std_logic ;
     PW : in std_logic ;
-    IorD : in std_logic ;
+    IorD : in std_logic_vector("1 downto 0") ;
     MR : in std_logic ;
     MW : in std_logic ;
     IW : in std_logic ; 
     DW : in std_logic ;
     M2R : in std_logic ;
-    R1src: in std_logic;
+    R1src: in std_logic_vector(1 downto 0);
     Wsrc: in std_logic;
     Rsrc : in std_logic ;
     RW : in std_logic ;
@@ -114,7 +114,7 @@ signal shift_amt_sig: std_logic_vector(4 downto 0);
 signal shift_type_sig: std_logic_vector(1 downto 0);
 signal shifter_output: std_logic_vector(31 downto 0);
 signal bram_we: std_logic_vector(3 downto 0);
-
+signal zeros32: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 begin
 
     extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));
@@ -234,10 +234,12 @@ begin
             Result <= alu_c ;
          end if ;
          
-         if(IorD = '1') then 
+         if(IorD = "00") then 
             pmp_proc_inp <= rf_pc_output ;
-         else 
+         elsif (IorD ="01") then 
             pmp_proc_inp <= Result ;
+         else   
+            pmp_proc_inp <= reg_a ;
          end if ;
          
          if(PW = '1') then
@@ -264,10 +266,12 @@ begin
             register_file_read_addr2 <= Instruction(3 downto 0) ;
         end if ;
         
-        if(R1src = '1') then 
+        if(R1src = "00") then 
               register_file_read_addr1 <= Instruction(19 downto 16) ;
-           else 
+           elsif (R1src="01") then
                 register_file_read_addr1 <= Instruction(15 downto 12) ;
+           else
+                register_file_read_addr1 <= Instruction(11 downto 8) ;
          end if ;
         
         if(Wsrc = '1') then 
@@ -299,8 +303,10 @@ begin
             alu_b <= extended_ins_23_0 ;
         elsif(Asrc2 = "100") then
             alu_b <= multiplier_output ;
-        else
+        elsif(Asrc2 = "101") then
             alu_b <= shifter_output ;
+        else
+            alu_b<= zeros32;    
         end if;
         
         if (Fset = '1') then 

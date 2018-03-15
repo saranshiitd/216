@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 03/09/2018 02:10:09 PM
+-- Create Date: 09.03.2018 14:23:38
 -- Design Name: 
--- Module Name: check_cond - Behavioral
+-- Module Name: controller_fsm - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,17 +31,13 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity check_cond is
-  Port ( 
-    condition : in std_logic ;
-    output : out std_logic
-  );
-end check_cond;
+entity controller_fsm is
+--  Port ( );
+end controller_fsm;
 
-architecture Behavioral of check_cond is
+architecture Behavioral of controller_fsm is
 
 begin
-    
-    output <= '1' when (condition = '1') else '0' ;
+
 
 end Behavioral;

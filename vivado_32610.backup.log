@@ -1,0 +1,1782 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar  7 19:09:36 2018
+# Process ID: 32610
+# Current directory: /home/sushant/Desktop/col216 lab/216_assignments
+# Command line: vivado
+# Log file: /home/sushant/Desktop/col216 lab/216_assignments/vivado.log
+# Journal file: /home/sushant/Desktop/col216 lab/216_assignments/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
+set_property top alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:66]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:67]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:69]
+ERROR: [VRFC 10-1537] value -13 is out of target constraint range 0 to 2147483647 [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:120]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alu_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-1537] value -13 is out of target constraint range 0 to 2147483647 [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:120]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alu_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 19:45:04 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 2 flag incorrect
+Time: 30 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 19:50:09 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+ERROR: [VRFC 10-1412] syntax error near carry [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:142]
+ERROR: [VRFC 10-724] found '0' definitions of operator "=", cannot determine exact overloaded matching definition for "=" [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:151]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:39]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+ERROR: [VRFC 10-1412] syntax error near carry [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:142]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:39]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 31 elements ; expected 32 [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:140]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit alu_tb in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 19:55:18 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+ERROR: [VRFC 10-1412] syntax error near ^ [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:158]
+ERROR: [VRFC 10-704] formal size_res has no actual or default value [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:158]
+ERROR: [VRFC 10-1412] syntax error near ^ [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:159]
+ERROR: [VRFC 10-704] formal size_res has no actual or default value [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:159]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:39]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 19:59:00 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Integer overflow in ** operation
+Time: 40 ns  Iteration: 0  Process: /alu_tb/stim_proc
+  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+
+HDL Line: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd:159
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 19:59:48 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 20:05:01 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 20:09:55 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 20:17:25 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 22:17:57 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd} w ]
+add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd}}
+set_property top mem_proc_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+ERROR: [VRFC 10-1012] mismatch on label ; expected mem_proc_tb [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:37]
+ERROR: [VRFC 10-1504] unit mem_proc_tb ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:35]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+ERROR: [VRFC 10-1471] type error near h_sel ; current type std_logic; expected type std_logic_vector [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:71]
+ERROR: [VRFC 10-704] formal h_sel has no actual or default value [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:66]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:39]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+ERROR: [VRFC 10-719] formal port/generic <h_se> is not declared in <mem_proc_path> [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:72]
+ERROR: [VRFC 10-704] formal h_sel has no actual or default value [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:66]
+ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd:39]
+INFO: [VRFC 10-240] VHDL file /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd ignored due to errors
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-99] Step results log file:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log'
+ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/xvhdl.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot mem_proc_tb_behav xil_defaultlib.mem_proc_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_tb
+Built simulation snapshot mem_proc_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:00:56 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mem_proc_tb_behav -key {Behavioral:sim_1:Functional:mem_proc_tb} -tclbatch {mem_proc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source mem_proc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mem_proc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot mem_proc_tb_behav xil_defaultlib.mem_proc_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_tb
+Built simulation snapshot mem_proc_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:07:00 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mem_proc_tb_behav -key {Behavioral:sim_1:Functional:mem_proc_tb} -tclbatch {mem_proc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source mem_proc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error: case 1 proc_out incorrect
+Time: 20 ns  Iteration: 0  Process: /mem_proc_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mem_proc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot mem_proc_tb_behav xil_defaultlib.mem_proc_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_tb
+Built simulation snapshot mem_proc_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:07:27 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mem_proc_tb_behav -key {Behavioral:sim_1:Functional:mem_proc_tb} -tclbatch {mem_proc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source mem_proc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mem_proc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'mem_proc_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj mem_proc_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_path
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/mem_proc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mem_proc_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot mem_proc_tb_behav xil_defaultlib.mem_proc_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
+Compiling architecture behavioral of entity xil_defaultlib.mem_proc_tb
+Built simulation snapshot mem_proc_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:09:11 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mem_proc_tb_behav -key {Behavioral:sim_1:Functional:mem_proc_tb} -tclbatch {mem_proc_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source mem_proc_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mem_proc_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+set_property top alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+current_sim simulation_9
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:40:37 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Integer overflow in ** operation
+Time: 0 ps  Iteration: 0  Process: /alu_tb/uut/line__70
+  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd
+
+HDL Line: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:70
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:44:06 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: Error: case 0 c (add) incorrect
+Time: 10 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: Error: case 1 c (sub) incorrect
+Time: 20 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: Error: case 2 c (adc) incorrect
+Time: 30 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 2 flag(Z) incorrect
+Time: 30 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 3 flag(C) incorrect
+Time: 40 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:44:46 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 3 flag(C) incorrect
+Time: 40 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Wed Mar  7 23:46:17 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 3 flag(C) incorrect
+Time: 40 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_wave {{/alu_tb/uut}} 
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Error: case 3 flag(C) incorrect
+Time: 40 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  8 00:00:15 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 33 elements, right array has 32 elements
+Time: 0 ps  Iteration: 1  Process: /alu_tb/uut/line__85
+  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd
+
+HDL Line: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd:85
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  8 00:02:16 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+add_wave {{/alu_tb/uut}} 
+relaunch_sim
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '0' seconds
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+Error: case 4 flag(V) incorrect
+Time: 50 ns  Iteration: 0  Process: /alu_tb/stim_proc  File: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File '/opt/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-37] Inspecting design source files for 'alu_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/BRAM2_blk_mem_gen_0_0.mif'
+INFO: [SIM-utils-43] Exported '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/data.coe'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+xvhdl -m64 --relax -prj alu_tb_vhdl.prj
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/alu_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity alu_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot alu_tb_behav xil_defaultlib.alu_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
+Compiling architecture behavioral of entity xil_defaultlib.alu_tb
+Built simulation snapshot alu_tb_behav
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/sushant/Desktop/col216 -notrace
+couldn't read file "/home/sushant/Desktop/col216": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu Mar  8 00:07:00 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '0' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "alu_tb_behav -key {Behavioral:sim_1:Functional:alu_tb} -tclbatch {alu_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source alu_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'alu_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Mar  8 00:09:20 2018...

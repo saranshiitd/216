@@ -62,8 +62,8 @@
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
+        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/BRAM2/hdl/BRAM2_wrapper.vhd">
         <FileInfo>
@@ -145,6 +145,13 @@
         </FileInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/new/controller_fsm.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/FlagCheckUnit.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

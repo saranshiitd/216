@@ -35,7 +35,7 @@ entity datapath is
  Port ( 
     clk : in std_logic ;
     PW : in std_logic ;
-    IorD : in std_logic_vector("1 downto 0") ;
+    IorD : in std_logic_vector(1 downto 0) ;
     MR : in std_logic ;
     MW : in std_logic ;
     IW : in std_logic ; 
@@ -115,6 +115,8 @@ signal shift_type_sig: std_logic_vector(1 downto 0);
 signal shifter_output: std_logic_vector(31 downto 0);
 signal bram_we: std_logic_vector(3 downto 0);
 signal zeros32: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+
+
 begin
 
     extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));

@@ -22,3 +22,28 @@ add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_pro
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
 close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} w ]
 add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}}
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top datapath_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source datapath_tb.tcl
+run 1 us
+close_sim
+launch_simulation
+source datapath_tb.tcl
+run 1 us
+add_wave {{/datapath_tb/uut}} 
+add_wave {{/datapath_tb/uut/alu_instantiation}} 
+restart
+run 1 us
+restart
+run 1 us
+add_wave {{/datapath_tb/uut/register_file_instantiation}} 
+restart
+run 1 us

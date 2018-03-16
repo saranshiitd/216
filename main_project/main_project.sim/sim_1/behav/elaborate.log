@@ -1,6 +1,6 @@
 Vivado Simulator 2016.4
 Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
-Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L blk_mem_gen_v8_3_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot datapath_behav xil_defaultlib.datapath xil_defaultlib.glbl -log elaborate.log 
+Running: /opt/Xilinx/Vivado/2016.4/bin/unwrapped/lnx64.o/xelab -wto d11fd9260a384bc3a26442db9652b4b0 --debug typical --relax --mt 8 -L blk_mem_gen_v8_3_5 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot datapath_tb_behav xil_defaultlib.datapath_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_3/simulation/blk_mem_gen_v8_3.v:2420]
@@ -29,5 +29,6 @@ Compiling architecture behavioral of entity xil_defaultlib.shifter [shifter_defa
 Compiling architecture behavioral of entity xil_defaultlib.proc_mem_path [proc_mem_path_default]
 Compiling architecture behavioral of entity xil_defaultlib.mem_proc_path [mem_proc_path_default]
 Compiling architecture behavioral of entity xil_defaultlib.alu [alu_default]
-Compiling architecture behavioral of entity xil_defaultlib.datapath
-Built simulation snapshot datapath_behav
+Compiling architecture behavioral of entity xil_defaultlib.datapath [datapath_default]
+Compiling architecture behavioral of entity xil_defaultlib.datapath_tb
+Built simulation snapshot datapath_tb_behav

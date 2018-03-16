@@ -110,9 +110,9 @@ signal alu_carry:  std_logic ;
 signal alu_opcode:  std_logic_vector(3 downto 0);
 signal alu_c:  std_logic_vector(31 downto 0);
 signal alu_flags: std_logic_vector(3 downto 0) ;
-signal reg_a : std_logic_vector(31 downto 0) ;
-signal reg_b : std_logic_vector(31 downto 0) ;
-signal reg_c : std_logic_vector(31 downto 0) ;
+signal reg_a : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
+signal reg_b : std_logic_vector(31 downto 0) := "00000000000000000000000000000000" ;
+signal reg_c : std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 signal Instruction : std_logic_vector(31 downto 0) ;
 signal Data : std_logic_vector(31 downto 0) ;
 signal Result : std_logic_vector(31 downto 0) ;
@@ -138,8 +138,8 @@ begin
     ir_out<= Instruction;
     dr_out<= data;
     alu_out<= alu_c;
-    reg_read1<=register_file_read_addr1;
-    reg_read2<=register_file_read_addr2;
+    reg_read1<=register_output1;
+    reg_read2<=register_output2;
     res_out<=result;
     mem_out<= memory_output;
     
@@ -274,6 +274,7 @@ begin
             rf_pc_input <= alu_c ; 
             rf_pc_write_enable <= '1' ;
          else 
+       
             rf_pc_write_enable<= '0' ;
          end if ;
          if(MW = '1') then 

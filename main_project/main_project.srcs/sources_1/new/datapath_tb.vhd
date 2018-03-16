@@ -64,7 +64,16 @@ component datapath is
         ReW : in std_logic ;
         op : in std_logic_vector(3 downto 0) ;
         Flags : in std_logic_vector(3 downto 0) ;
-        Reset_register_file : in std_logic 
+        Reset_register_file : in std_logic ;
+        reg_read1: out std_logic_vector(31 downto 0);
+        reg_read2: out std_logic_vector(31 downto 0);
+        alu_out:out std_logic_vector(31 downto 0);
+        a_out: out std_logic_vector(31 downto 0);
+        b_out: out std_logic_vector(31 downto 0);
+        c_out: out std_logic_vector(31 downto 0);
+        ir_out : out std_logic_vector(31 downto 0);
+        dr_out: out std_logic_vector(31 downto 0);
+        res_out: out std_logic_vector(31 downto 0)
     );
 end component datapath ;
 signal pulse : std_logic := '0' ; 
@@ -98,7 +107,8 @@ signal dp_instruction : std_logic_vector(31 downto 0) := (others => '0');
 signal dp_memory_data : std_logic_vector(31 downto 0) := (others => '0');
 signal dp_A : std_logic_vector(31 downto 0) := (others => '0');   
 signal dp_B : std_logic_vector(31 downto 0) := (others => '0');   
-signal dp_C : std_logic_vector(31 downto 0) := (others => '0');   
+signal dp_C : std_logic_vector(31 downto 0) := (others => '0');  
+signal dp_Res : std_logic_vector(31 downto 0) := (others => '0') ; 
 signal output_signal : std_logic_vector(31 downto 0) ; 
 begin
     datapath_i : component datapath
@@ -124,7 +134,16 @@ begin
             ReW => dp_ReW,
             op => dp_op,
             Flags => dp_Flags,
-            Reset_register_file => dp_Reset_register_file
+            Reset_register_file => dp_Reset_register_file , 
+            reg_read1 => dp_register1,
+            reg_read2 => dp_register2,
+            alu_out=>dp_alu_output ,
+            a_out => dp_A,
+            b_out => dp_B,
+            c_out => dp_C,
+            ir_out => dp_instruction ,
+            dr_out => dp_memory_data,
+            res_out => dp_Res
         );
     process(clk) 
     begin 
@@ -146,13 +165,16 @@ begin
     end process ;
     
     -- instruction hardcoding here  
-    output_signal <= dp_register1 when MultiPlexerInp = "000" else
-                     dp_register2 when MultiPlexerInp = "001" else 
-                     dp_alu_output when MultiPlexerInp = "010" else 
-                     dp_instruction when MultiPlexerInp = "011" else 
-                     dp_memory_data when MultiPlexerInp = "100" else 
-                     dp_A when MultiPlexerInp = "101" else 
-                     dp_B when MultiPlexerInp = "110" else 
-                     dp_C when  MultiPlexerInp = "111" ; 
+        
     
+
+    output_signal <= dp_register1 when MultiPlexerInp = "0000" else
+                     dp_register2 when MultiPlexerInp = "0001" else 
+                     dp_alu_output when MultiPlexerInp = "0010" else 
+                     dp_instruction when MultiPlexerInp = "0011" else 
+                     dp_memory_data when MultiPlexerInp = "0100" else 
+                     dp_A when MultiPlexerInp = "0101" else 
+                     dp_B when MultiPlexerInp = "0110" else 
+                     dp_C when  MultiPlexerInp = "0111" else 
+                     dp_Res ;     
 end Behavioral;

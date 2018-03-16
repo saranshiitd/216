@@ -31,16 +31,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity datapath_tb is
+entity test_datapath is
   Port ( 
     MultiPlexerInp : in std_logic_vector(2 downto 0) ;
     LED_outputs : out std_logic_vector(15 downto 0) ;
     generate_pulse : in std_logic  ;
     clk : in std_logic 
   );
-end datapath_tb;
+end test_datapath;
     
-architecture Behavioral of datapath_tb is
+architecture Behavioral of test_datapath is
 component datapath is
     port(
         clk : in std_logic ;

@@ -2,8 +2,8 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Fri Mar  9 13:18:13 2018
-# Process ID: 26187
+# Start of session at: Fri Mar 16 13:08:11 2018
+# Process ID: 11055
 # Current directory: /home/sushant/Desktop/col216 lab/216_assignments
 # Command line: vivado
 # Log file: /home/sushant/Desktop/col216 lab/216_assignments/vivado.log
@@ -11,10 +11,21 @@
 #-----------------------------------------------------------
 start_gui
 open_project {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr}
+INFO: [Project 1-313] Project file moved from '/home/btech/cs1160326/216_assignments/main_project' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'.
-close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/controller_fsm.vhd} w ]
-add_files {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/controller_fsm.vhd}}
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 5847.789 ; gain = 80.234 ; free physical = 25467 ; free virtual = 29414
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} w ]
+add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}}
+remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath_tb.vhd}}
+file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath_tb.vhd}
+remove_files  -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}}
+file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}
+add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/test_datapath.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} w ]
+add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}}

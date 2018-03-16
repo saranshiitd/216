@@ -63,7 +63,8 @@ entity datapath is
     c_out: out std_logic_vector(31 downto 0);
     ir_out : out std_logic_vector(31 downto 0);
     dr_out: out std_logic_vector(31 downto 0);
-    res_out: out std_logic_vector(31 downto 0)
+    res_out: out std_logic_vector(31 downto 0);
+    mem_out: out std_logic_vector(31 downto 0)
  );
 end datapath;
 
@@ -125,7 +126,6 @@ signal shifter_output: std_logic_vector(31 downto 0);
 signal bram_we: std_logic_vector(3 downto 0);
 signal zeros32: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 
-
 begin
 
     extended_ins_23_0 <= std_logic_vector(resize(signed(Instruction(23 downto 0)), extended_ins_23_0'length));
@@ -141,7 +141,7 @@ begin
     reg_read1<=register_file_read_addr1;
     reg_read2<=register_file_read_addr2;
     res_out<=result;
-    
+    mem_out<= memory_output;
     
     
     alu_opcode <= op ;
@@ -194,7 +194,7 @@ begin
     
     proc_mem_path_instantiation : entity work.proc_mem_path port map (
         
-        proc_inp => pmp_proc_inp ,
+       proc_inp => pmp_proc_inp ,
        mem_out => pmp_mem_out ,
        h => pmp_h ,
        b => pmp_b ,

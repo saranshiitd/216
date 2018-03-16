@@ -1,0 +1,706 @@
+/*
+
+Vivado v2016.4 (64-bit)
+SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+Process ID: 11055
+
+Current time: 	3/16/18 1:08:42 PM IST
+Time zone: 	India Standard Time (Asia/Kolkata)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 4.13.0-36-generic
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :1
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/opt/Xilinx/Vivado/2016.4/tps/lnx64/jre
+
+User name: 	sushant
+User home directory: /home/sushant
+User working directory: /home/sushant/Desktop/col216 lab/216_assignments
+User country: 	IN
+User language: 	en
+User locale: 	en_IN
+
+RDI base root directory: /opt/Xilinx/Vivado
+RDI data directory: /opt/Xilinx/Vivado/2016.4/data
+RDI bin directory: /opt/Xilinx/Vivado/2016.4/bin
+
+Vivado preferences path: /home/sushant/.Xilinx/Vivado/2016.4/vivado.ini
+Vivado layouts directory: /home/sushant/.Xilinx/Vivado/2016.4/layouts
+
+GUI allocated memory:	152 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 710 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 28 MB (+27022kb) [00:00:08]
+// [Engine Memory]: 710 MB (+593095kb) [00:00:08]
+selectList(PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr", 0); // q:k (JViewport:JComponent, cd:JFrame)
+// bt:g (cd:JFrame):  Open Project : addNotify
+// Opening Vivado Project: /home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr. Version: Vivado v2016.4 
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 22 MB. Current time: 3/16/18 1:08:45 PM IST
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr} 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: IP_LOCK_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 50 MB (+21144kb) [00:00:16]
+// [Engine Memory]: 780 MB (+35662kb) [00:00:16]
+// [GUI Memory]: 56 MB (+3683kb) [00:00:17]
+// Tcl Message: open_project {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr} 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/home/btech/cs1160326/216_assignments/main_project' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.4/data/ip'. 
+// Project name: main_project; location: /home/sushant/Desktop/col216 lab/216_assignments/main_project; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 5847.789 ; gain = 80.234 ; free physical = 25467 ; free virtual = 29414 
+dismissDialog("Open Project"); // bt:g (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// PAPropertyPanels.initPanels (datapath.vhd) elapsed time: 0.2s
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath_tb - Behavioral (datapath_tb.vhd), datapath_i - datapath - Behavioral (datapath.vhd)]", 3, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath_tb - Behavioral (datapath_tb.vhd), datapath_i - datapath - Behavioral (datapath.vhd)]", 3, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("datapath.vhd", 185, 172); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 185, 172, false, false, false, false, true); // bF:I (JPanel:JComponent, cd:JFrame) - Double Click
+// [Engine Memory]: 819 MB (+882kb) [00:00:43]
+selectCodeEditor("datapath.vhd", 118, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 118, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 118, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 83, 186); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// [GUI Memory]: 59 MB (+122kb) [00:03:28]
+// Elapsed time: 149 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectCodeEditor("datapath.vhd", 40, 289); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 829 MB. GUI used memory: 29 MB. Current time: 3/16/18 1:12:04 PM IST
+// [GUI Memory]: 62 MB (+116kb) [00:04:50]
+// Elapsed time: 157 seconds
+selectCodeEditor("datapath.vhd", 311, 336); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 79 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath_tb - Behavioral (datapath_tb.vhd), datapath_i - datapath - Behavioral (datapath.vhd), alu_instantiation - alu - Behavioral (alu.vhd)]", 10, false); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 15); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 15, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 16, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Coefficient Files]", 24, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu_tb - Behavioral (alu_tb.vhd)]", 19, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu_tb - Behavioral (alu_tb.vhd)]", 19, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 54, 430); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mem_proc_tb - Behavioral (mem_proc_tb.vhd)]", 22, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mem_proc_tb - Behavioral (mem_proc_tb.vhd)]", 22, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 851 MB. GUI used memory: 29 MB. Current time: 3/16/18 1:16:29 PM IST
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 51, 285); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 869 MB (+8791kb) [00:08:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 869 MB. GUI used memory: 29 MB. Current time: 3/16/18 1:17:29 PM IST
+// Elapsed time: 60 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// [GUI Memory]: 65 MB (+133kb) [00:09:10]
+// Elapsed time: 18 seconds
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// Elapsed time: 14 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "datapath_tb"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 51 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}} 
+// I:q (cd:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// [GUI Memory]: 72 MB (+4084kb) [00:09:57]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "mem_proc_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("mem_proc_tb.vhd", 165, 428); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 21, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 21, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// Elapsed time: 22 seconds
+selectCodeEditor("datapath_tb.vhd", 49, 290); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 21, true, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g:JCheckBox (JPanel:JComponent, ar:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+// 'c' command handler elapsed time: 5 seconds
+// TclEventType: DG_GRAPH_STALE
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath_tb.vhd}} 
+// Tcl Message: file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/datapath_tb.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 78 MB (+2672kb) [00:11:31]
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+// Elapsed time: 15 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, (String) null); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 22 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, BRAM2_wrapper - STRUCTURE (BRAM2_wrapper.vhd)]", 11, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("datapath_tb.vhd", 146, 174); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 74 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, datapath - Behavioral (datapath.vhd)]", 1); // y:i (D:JPanel, cd:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 5); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 5); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files]", 5, true); // y:i (D:JPanel, cd:JFrame) - Node
+// [GUI Memory]: 83 MB (+483kb) [00:16:20]
+// Elapsed time: 134 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false, false, false, false, true, false); // y:i (D:JPanel, cd:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // Y:JMenu (ah:JPopupMenu, cd:JFrame)
+selectMenuItem(RDIResourceCommand.RDICommands_DELETE, "Remove File from Project..."); // ab:JMenuItem (ah:JPopupMenu, cd:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// ar:g (cd:JFrame): Remove Sources: addNotify
+selectCheckBox(PAResourceQtoS.RemoveSourcesDialog_ALSO_DELETE, "Also delete the project local file/directory from disk", true); // g:JCheckBox (JPanel:JComponent, ar:g): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ar:g)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // B:b
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Remove Sources"); // ar:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: remove_files  -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}} 
+// Tcl Message: file delete -force {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, "Add or create design sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files"); // a:JButton (C:JPanel, b:g)
+// Elapsed time: 13 seconds
+setFileChooser("/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/test_datapath.vhd");
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 25 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -norecurse {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/new/test_datapath.vhd}} 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (test_datapath.vhd)]", 14, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (test_datapath.vhd)]", 14, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectCodeEditor("test_datapath.vhd", 133, 70); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("test_datapath.vhd", 131, 119); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("test_datapath.vhd", 150, 295); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // u:K (t:D, cd:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cd:JFrame): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, "Add or create simulation sources"); // a:JRadioButton (JPanel:JComponent, b:g)
+// Elapsed time: 47 seconds
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a:JButton (C:JPanel, b:g)
+// F:q (b:g): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "datapath_tb"); // ak:JTextField (JPanel:JComponent, F:q)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, F:q)
+dismissDialog("Create Source File"); // F:q (b:g)
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+// 'h' command handler elapsed time: 65 seconds
+dismissDialog("Add Sources"); // b:g (cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property SOURCE_SET sources_1 [get_filesets sim_1] 
+// Tcl Message: close [ open {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files -fileset sim_1 {{/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd}} 
+// I:q (cd:JFrame): Define Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, I:q)
+// TclEventType: DG_GRAPH_STALE
+selectButton("PAResourceAtoD.DefineModulesDialog_YOU_HAVE_MADE_CHANGES_TO_MODULE_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, G:JDialog)
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I:q (cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 116 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu_tb - Behavioral (alu_tb.vhd)]", 12, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, alu_tb - Behavioral (alu_tb.vhd)]", 12, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+// [GUI Memory]: 90 MB (+3247kb) [00:21:56]
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "alu_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("alu_tb.vhd", 343, 84); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, datapath_tb - Behavioral (datapath_tb.vhd)]", 18, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 155); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 92, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 177, 404); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 484, 375); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 33 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 465 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 14 seconds
+selectCodeEditor("datapath.vhd", 241, 355); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 81 seconds
+selectCodeEditor("datapath.vhd", 155, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 117 seconds
+selectCodeEditor("datapath.vhd", 155, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 155, 271); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 155, 320); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mpp_mem_inp"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 203, 424); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 888 MB. GUI used memory: 34 MB. Current time: 3/16/18 1:47:30 PM IST
+// Elapsed time: 316 seconds
+setText(RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, "mpp_mem_inp"); // l:ak (au:e, cd:JFrame)
+selectCodeEditor("datapath.vhd", 228, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 228, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 228, 392); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 148, 190); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 527, 29); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 391 seconds
+selectCodeEditor("datapath.vhd", 470, 332); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 470, 332); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 470, 332); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 34 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 503, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "test_datapath.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 107, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 26, 42); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 163, 117); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 83 seconds
+selectCodeEditor("datapath_tb.vhd", 80, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 889 MB. GUI used memory: 33 MB. Current time: 3/16/18 1:59:50 PM IST
+// Elapsed time: 48 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 524 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 115 seconds
+selectCodeEditor("datapath_tb.vhd", 266, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 266, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 266, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 266, 270); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 116, 508); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 12 seconds
+selectCodeEditor("datapath_tb.vhd", 223, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 223, 422); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 18 seconds
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 110, 338); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 124, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 124, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 124, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 124, 483); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 35, 459); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 35 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 220, 397); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 128, 362); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 57, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 14 seconds
+typeControlKey(null, null, 'z');
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("datapath.vhd", 50, 87); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 61, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 61, 85); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 54, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("datapath.vhd", 106, 132); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 325, 249); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 912 MB. GUI used memory: 33 MB. Current time: 3/16/18 2:14:00 PM IST
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 479, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 465, 370); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 444, 356); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 1); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 15 seconds
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 48 seconds
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath.vhd", 193, 287); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 481, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 481, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 481, 180); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 267, 175); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 93, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 55 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+// [Engine Memory]: 912 MB (+9kb) [01:09:06]
+// Elapsed time: 63 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey(null, null, 'z');
+selectCodeEditor("datapath_tb.vhd", 291, 177); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 62, 116); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 192 seconds
+selectCodeEditor("datapath_tb.vhd", 243, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 243, 169); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 268 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, mem_proc_tb - Behavioral (mem_proc_tb.vhd), uut - mem_proc_path - Behavioral (mem_proc_path.vhd)]", 16, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 10, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 10, true, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, datapath_tb.vhd]", 11, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, datapath_tb.vhd]", 11, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectTab((HResource) null, (HResource) null, "Messages", 1); // aA:FrameContainer (ContainerContainer:JideSplitPane, cd:JFrame)
+// Elapsed time: 10 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ). [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:74]. ]", 11, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd;-;;-;16;-;line;-;74;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectCodeEditor("datapath_tb.vhd", 349, 226); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 349, 226); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near constant. [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:114]. ]", 11, true); // ah:i (JViewport:JComponent, cd:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd;-;;-;16;-;line;-;114;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("datapath_tb.vhd", 382, 353); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 20-737] The module currently selected as top, datapath, is instantiated more than once in this source hierarchy. All instantiation nodes will be indicated as top modules, however, only one unique set of source file(s) will be used for synthesis and implementation.. ]", 12, false); // ah:i (JViewport:JComponent, cd:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:119]. ]", 11, false); // ah:i (JViewport:JComponent, cd:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd;-;;-;16;-;line;-;119;-;;-;16;-;"); // ah:i (JViewport:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 248, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

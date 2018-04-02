@@ -53,7 +53,7 @@ entity datapath is
     Fset : in std_logic ;
     ReW : in std_logic ;
     op : in std_logic_vector(3 downto 0) ;
-    Flags : in std_logic_vector(3 downto 0) ;
+    Flags : out std_logic_vector(3 downto 0) ;
     Reset_register_file : in std_logic; 
     reg_read1: out std_logic_vector(31 downto 0);
     reg_read2: out std_logic_vector(31 downto 0);

@@ -76,7 +76,8 @@ signal arithRegShiftReg : std_logic ;
 begin
 
     arithRegShiftCons <= '1' when ( (instruction_type = arith) and ( Instruction(4) = '0') ) else '0' ; 
-    arithRegNoShift <= '1' when ((instruction_type = arith) and  )
-
+    arithRegNoShift <= '1' when ((instruction_type = arith) and ( Instruction(11 downto 7) = "00000") and (Instruction(4) = '0') ) ; 
+    arithRegShiftReg <= '1' when ((instruction_type = arith) and )
+ 
 
 end Behavioral;

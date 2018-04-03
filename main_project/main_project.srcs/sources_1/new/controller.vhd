@@ -67,6 +67,7 @@ type state is (fetch , RdAB , RdBC , RdC , WriteRes ) ;
 type instruction_type_type is (DP, DT, Branch) ;
 type dpsubclass_type is (mul,arith,tst, NotDP);
 type dtsubclass_type is ( wordTransfer , byteTransfer , halfwordTranfer , NotDT ) ;
+type multiply_type is ( mult , mla , notMul ) ;
 signal Immediate : std_logic ;
 signal arithRd : std_logic_vector(3 downto 0) ; 
 signal arithRn : std_logic_vector(3 downto 0) ; 
@@ -83,7 +84,7 @@ signal dtInstructionSubtype : dtsubclass_type ;
 signal loadOrStore : std_logic ; -- 0 then store else load 
 signal ImmediateOffset : std_logic ;
 signal writeBackDT : std_logic ;
-
+signal mulType : multiply_type ;
   
 begin
     instruction_type <=  DT when ( Instruction(27 downto 26) = "01" or ((Instruction(27 downto 26) = "00" and Instruction(11 downto 8) = "0000" and Instruction(4) = '1' and Instruction(7) = '1' and Instruction(6 downto 5) /= "00" ))) else
@@ -110,13 +111,17 @@ begin
 
     PrePost <= 'Z' when instruction_type /= DT else
                 Instruction(24) ;
+
     UpDown <= 'Z' when instruction_type /= DT else 
                 Instruction(23) ;
+
     writeBackDT <= 'Z' when (instruction_type /= DT) else
                    Instruction(21) ;
 
-    
- 
- 
+    mulType <= notMul when ( dpInstructionSubtype /= mul ) else
+            <= mult when (Instruction(21) = '0') else 
+            <= mla ;
+
+
 
 end Behavioral;

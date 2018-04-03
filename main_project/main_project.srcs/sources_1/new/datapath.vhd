@@ -35,6 +35,7 @@ entity datapath is
  Port ( 
     clk : in std_logic ;
     PW : in std_logic ;
+    PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
     IorD : in std_logic_vector(1 downto 0) ;
     MR : in std_logic ;
     MW : in std_logic ;
@@ -43,12 +44,12 @@ entity datapath is
     M2R : in std_logic ;
     R1src: in std_logic_vector(1 downto 0);
     Wsrc: in std_logic;
-    Rsrc : in std_logic ;
+    R2src : in std_logic ;
     RW : in std_logic ;
     AW : in std_logic ;
     BW : in std_logic ;
     CW : in std_logic ;
-    Asrc1 : in std_logic ;
+    Asrc1 : in std_logic_vector(1 downto 0) ;
     Asrc2 : in std_logic_vector(2 downto 0) ;
     Fset : in std_logic ;
     ReW : in std_logic ;
@@ -88,6 +89,7 @@ signal register_output2 : std_logic_vector(31 downto 0) ;
 signal rf_pc_output : std_logic_vector(31 downto 0);
 signal rf_pc_write_enable : std_logic ; 
 signal rf_pc_input : std_logic_vector(31 downto 0) ;
+signal rf_pc_temp: std_logic_vector(31 downto 0);
 signal multiplier_op1 : std_logic_vector(31 downto 0) ;
 signal multiplier_op2 : std_logic_vector(31 downto 0) ;
 signal multiplier_output : std_logic_vector(31 downto 0) ;
@@ -270,8 +272,12 @@ begin
             --pmp_proc_inp <= reg_a ;
          end if ;
          
+         if(PW_temp='1') then
+            rf_pc_temp<= alu_c;
+         end if;
+         
          if(PW = '1') then
-            rf_pc_input <= alu_c ; 
+            rf_pc_input <= rf_pc_temp ; 
             rf_pc_write_enable <= '1' ;
          else 
        
@@ -289,7 +295,7 @@ begin
             memory_read_enable <= '0' ;
         end if ;
         
-        if(Rsrc = '1') then 
+        if(R2src = '1') then 
             register_file_read_addr2 <= Instruction(15 downto 12) ;
         else 
             register_file_read_addr2 <= Instruction(3 downto 0) ;
@@ -316,9 +322,11 @@ begin
             register_file_input <= Result ;
         end if ;
         
-        if(Asrc1 = '1') then 
-            alu_a <= reg_a ; 
-        else 
+        if(Asrc1 = "00") then 
+            alu_a <= reg_a ;
+        elsif(Asrc1="01") then
+            alu_a<= reg_c; 
+        elsif(Asrc1="11") then
             alu_a <= rf_pc_output ;
         end if;
         

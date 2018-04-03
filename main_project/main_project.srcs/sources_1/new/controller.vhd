@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity controller is
 Port(    clk : in std_logic ;
+    P_temp: out std_logic;
     PW : out std_logic ;
     IorD : out std_logic_vector(1 downto 0) ;
     MR : out std_logic ;
@@ -82,7 +83,7 @@ signal dtInstructionSubtype : dtsubclass_type ;
 signal loadOrStore : std_logic ; -- 0 then store else load 
 signal ImmediateOffset : std_logic ;
 signal writeBackDT : std_logic ;
-signal 
+
   
 begin
     instruction_type <=  DT when ( Instruction(27 downto 26) = "01" or ((Instruction(27 downto 26) = "00" and Instruction(11 downto 8) = "0000" and Instruction(4) = '1' and Instruction(7) = '1' and Instruction(6 downto 5) /= "00" ))) else
@@ -103,14 +104,15 @@ begin
     loadOrStore <= Instruction(20) when (instruction_type = DT) else 'Z' ;
 
     ImmediateOffset <= 'Z' when instruction_type /= DT else
-                        Instruction(25) when ((dpInstructionSubtype = wordTransfer) or (dpInstructionSubtype = byteTransfer) ) else
-                        Instruction(22) when dpInstructionSubtype = halfwordTranfer ;
+                        Instruction(25) when ( (dtInstructionSubtype = wordTransfer) or (dtInstructionSubtype = byteTransfer) ) else
+                        Instruction(22) when dtInstructionSubtype = halfwordTranfer ;
+
 
     PrePost <= 'Z' when instruction_type /= DT else
                 Instruction(24) ;
     UpDown <= 'Z' when instruction_type /= DT else 
                 Instruction(23) ;
-    writeBackDP <= 'Z' when instruction_type /= DT else
+    writeBackDT <= 'Z' when (instruction_type /= DT) else
                    Instruction(21) ;
 
     

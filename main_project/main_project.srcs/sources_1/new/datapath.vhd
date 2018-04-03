@@ -35,7 +35,6 @@ entity datapath is
  Port ( 
     clk : in std_logic ;
     PW : in std_logic ;
-    PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
     IorD : in std_logic_vector(1 downto 0) ;
     MR : in std_logic ;
     MW : in std_logic ;
@@ -65,7 +64,11 @@ entity datapath is
     ir_out : out std_logic_vector(31 downto 0);
     dr_out: out std_logic_vector(31 downto 0);
     res_out: out std_logic_vector(31 downto 0);
-    mem_out: out std_logic_vector(31 downto 0)
+    mem_out: out std_logic_vector(31 downto 0);
+    
+    --Further additions
+    PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
+    shift_amt_src: in std_logic --source of shift amount, '1' indicates constant, '0' indicates register
  );
 end datapath;
 
@@ -151,6 +154,7 @@ begin
     bram_we <= "1111" when memory_write_enable='1' else  "0000";
     pmp_proc_inp <= reg_b;
     selected_memory_input<=pmp_mem_out;
+    shift_amt_sig<= Instruction(11 downto 7) when shift_amt_src ='1' else reg_c(4 downto 0);
     memory_instantiation : entity work.BRAM2_wrapper port map (
         
         BRAM_PORTA_addr => memory_address ,

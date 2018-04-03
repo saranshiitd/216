@@ -48,15 +48,17 @@ Port(    clk : in std_logic ;
     AW : out std_logic ;
     BW : out std_logic ;
     CW : out std_logic ;
-    Asrc1 : out std_logic ;
+    Asrc1 : out std_logic_vector(1 downto 0) ;
     Asrc2 : out std_logic_vector(2 downto 0) ;
     Fset : out std_logic ;
     ReW : out std_logic ;
     op : out std_logic_vector(3 downto 0) ;
+    shift_amt_src: out std_logic;
+    
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
     Instruction : in std_logic_vector(31 downto 0 );
-    setflag: in std_logic;    
+    setflag: in std_logic    
 );
 end controller_fsm;
 
@@ -116,20 +118,36 @@ begin
                         r2src<='0';
                 end if;
                 if(instruction_type=DP) then
-                        if (dpsubclass=mul or dpsubclass=test) then
-                            state=RdBC;
+                        if (dpsubclass=mul or dpsubclass=tst) then
+                            state<=RdBC;
                         elsif (dpsubclass=arith) then
                             if(dpvariant=imm) then
                                 Asrc2<= "010";
                                 Asrc1<="00";
-                                ResW<='1';
+                                ReW<='1';
                                 if (setFlag= '1') then
                                     Fset<='1';
                                 else
                                     Fset<= '0';
                                 end if;
-                            elsif (dpvariant=
-                        
+                                state<= WRITERES;
+                            elsif (dpvariant=reg_imm) then
+                                Asrc2<= "000";
+                                Asrc1<="00";
+                                ReW<='1';
+                                if (setFlag= '1') then
+                                    Fset<='1';
+                                else
+                                    Fset<= '0';
+                                end if;
+                                state<= WRITERES;
+                            elsif(dpvariant=reg_shift_const) then
+                                Asrc2<= "101";
+                                Asrc1<="00";
+                                
+                                
+                                
+                                                            
                                
                                   
                 

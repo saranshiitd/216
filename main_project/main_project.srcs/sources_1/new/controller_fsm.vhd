@@ -62,9 +62,15 @@ end controller_fsm;
 architecture Behavioral of controller_fsm is
 
 type statetype is (FETCH , RDAB , RDBC , RDC , WRITERES ) ; 
-type instruction_type_type is (arithDP , mulDP , testDP ) ; 
+type instruction_type_type is (DP, DT, Branch) ;
+type dpsubclass_type is (mul,arith,tst); 
+type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
+
+
 
 signal state: statetype :=FETCH; 
+signal instruction_type : instruction_type_type ;
+signal dpsubclass: dpsubclass_type;
 signal count: natural range 10 downto 0 :=0;  
 
 
@@ -73,7 +79,6 @@ signal arithRd : std_logic_vector(3 downto 0) ;
 signal arithRn : std_logic_vector(3 downto 0) ; 
 signal arithRm : std_logic_vector(3 downto 0) ; 
 signal arithRs : std_logic_vector(3 downto 0) ;
-signal instruction_type : instruction_type_type ;
 signal arithRegNoShift : std_logic ;
 signal arithRegShiftCons : std_logic ; 
 signal arithRegShiftReg : std_logic ;
@@ -101,13 +106,17 @@ begin
             elsif (state=RDAB) then
                 AW<='1';
                 BW<='1';
-                if(instruction_type=mulDP) then
-                    r1src<="01";
-                    r2src<='0';
+                if(instruction_type= DP and dpsubclass=mul) then
+                        r1src<="01";
+                        r2src<='0';
                 else 
-                    r1src<="00";
-                    r2src<='0';
+                        r1src<="00";
+                        r2src<='0';
                 end if;
+                if(instruction_type=DP) then
+                        if (dpsubclass=mul) then
+                            
+                                  
                 
                 
            end if;        

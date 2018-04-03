@@ -55,7 +55,8 @@ Port(    clk : in std_logic ;
     op : out std_logic_vector(3 downto 0) ;
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
-    Instruction : in std_logic_vector(31 downto 0 )    
+    Instruction : in std_logic_vector(31 downto 0 );
+    setflag: in std_logic;    
 );
 end controller_fsm;
 
@@ -71,6 +72,7 @@ type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
 signal state: statetype :=FETCH; 
 signal instruction_type : instruction_type_type ;
 signal dpsubclass: dpsubclass_type;
+signal dpvariant: dpvariant_type;
 signal count: natural range 10 downto 0 :=0;  
 
 
@@ -104,7 +106,7 @@ begin
                     state<= RDAB;
                 end if;
             elsif (state=RDAB) then
-                AW<='1';
+                AW<='1'; 
                 BW<='1';
                 if(instruction_type= DP and dpsubclass=mul) then
                         r1src<="01";
@@ -114,8 +116,21 @@ begin
                         r2src<='0';
                 end if;
                 if(instruction_type=DP) then
-                        if (dpsubclass=mul) then
-                            
+                        if (dpsubclass=mul or dpsubclass=test) then
+                            state=RdBC;
+                        elsif (dpsubclass=arith) then
+                            if(dpvariant=imm) then
+                                Asrc2<= "010";
+                                Asrc1<="00";
+                                ResW<='1';
+                                if (setFlag= '1') then
+                                    Fset<='1';
+                                else
+                                    Fset<= '0';
+                                end if;
+                            elsif (dpvariant=
+                        
+                               
                                   
                 
                 

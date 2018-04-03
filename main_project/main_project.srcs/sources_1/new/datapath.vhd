@@ -332,6 +332,8 @@ begin
             alu_a<= reg_c; 
         elsif(Asrc1="11") then
             alu_a <= rf_pc_output ;
+        elsif(Asrc1<="10") then 
+            alu_a<= zeros32;
         end if;
         
         if(Asrc2 = "000") then 

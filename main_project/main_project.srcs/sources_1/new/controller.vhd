@@ -33,6 +33,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity controller is
 Port(    clk : in std_logic ;
+    P_temp: out std_logic;
     PW : out std_logic ;
     IorD : out std_logic_vector(1 downto 0) ;
     MR : out std_logic ;
@@ -61,22 +62,12 @@ end controller;
 
 
 architecture Behavioral of controller is
-type state is (fetch , RdAB , RdBC , RdC , WriteRes ) ; 
-type instruction_type_type is (arith , mul , test ) ; 
-signal Immediate : std_logic ;
-signal arithRd : std_logic_vector(3 downto 0) ; 
-signal arithRn : std_logic_vector(3 downto 0) ; 
-signal arithRm : std_logic_vector(3 downto 0) ; 
-signal arithRs : std_logic_vector(3 downto 0) ;
-signal instruction_type : instruction_type_type ;
-signal arithRegNoShift : std_logic ;
-signal arithRegShiftCons : std_logic ; 
-signal arithRegShiftReg : std_logic ; 
-  
+
+
 begin
 
-    arithRegShiftCons <= '1' when ( (instruction_type = arith) and ( Instruction(4) = '0') ) else '0' ; 
-    arithRegNoShift <= '1' when ((instruction_type = arith) and  )
-
-
+--    arithRegShiftCons <= '1' when ( (instruction_type = arith) and ( Instruction(4) = '0') ) else '0' ; 
+--    arithRegNoShift <= '1' when ((instruction_type = arith) and  )
+    
+    
 end Behavioral;

@@ -65,7 +65,6 @@ entity datapath is
     dr_out: out std_logic_vector(31 downto 0);
     res_out: out std_logic_vector(31 downto 0);
     mem_out: out std_logic_vector(31 downto 0);
-    
     --Further additions
     PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
     shift_amt_src: in std_logic --source of shift amount, '1' indicates constant, '0' indicates register

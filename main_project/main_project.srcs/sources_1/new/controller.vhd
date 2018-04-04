@@ -68,6 +68,7 @@ type instruction_type_type is (DP, DT, Branch) ;
 type dpsubclass_type is (mul,arith,tst, NotDP);
 type dtsubclass_type is ( wordTransfer , byteTransfer , halfwordTranfer , NotDT ) ;
 type multiply_type is ( mult , mla , notMul ) ;
+type dtLoadOrStoreType is (load , store , none ) ;
 signal Immediate : std_logic ;
 signal arithRd : std_logic_vector(3 downto 0) ; 
 signal arithRn : std_logic_vector(3 downto 0) ; 
@@ -81,10 +82,12 @@ signal arithRegShiftReg : std_logic ;
 signal PrePost : std_logic ; 
 signal UpDown : std_logic ; 
 signal dtInstructionSubtype : dtsubclass_type ; 
-signal loadOrStore : std_logic ; -- 0 then store else load 
+--signal loadOrStore : std_logic ; -- 0 then store else load 
 signal ImmediateOffset : std_logic ;
 signal writeBackDT : std_logic ;
 signal mulType : multiply_type ;
+signal loadOrStore : dtLoadOrStoreType ; 
+signal setFlag : std_logic ;
   
 begin
     instruction_type <=  DT when ( Instruction(27 downto 26) = "01" or ((Instruction(27 downto 26) = "00" and Instruction(11 downto 8) = "0000" and Instruction(4) = '1' and Instruction(7) = '1' and Instruction(6 downto 5) /= "00" ))) else
@@ -102,7 +105,9 @@ begin
                             byteTransfer when ((instruction_type = DT) and Instruction(22) = '1' ) else
                             wordTransfer when ((instruction_type = DT ) and Instruction(22) = '0' ) else
                             NotDT ;     
-    loadOrStore <= Instruction(20) when (instruction_type = DT) else 'Z' ;
+    loadOrStore <= none when (instruction_type /= DT) else
+                    load when Instruction(20) = '1' else
+                    store ;
 
     ImmediateOffset <= 'Z' when instruction_type /= DT else
                         Instruction(25) when ( (dtInstructionSubtype = wordTransfer) or (dtInstructionSubtype = byteTransfer) ) else
@@ -119,8 +124,10 @@ begin
                    Instruction(21) ;
 
     mulType <= notMul when ( dpInstructionSubtype /= mul ) else
-            <= mult when (Instruction(21) = '0') else 
-            <= mla ;
+             mult when (Instruction(21) = '0') else 
+             mla ;
+
+
 
 
 

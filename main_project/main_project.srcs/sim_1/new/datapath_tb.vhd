@@ -54,7 +54,7 @@ architecture Behavioral of datapath_tb is
             AW : in std_logic ;
             BW : in std_logic ;
             CW : in std_logic ;
-            Asrc1 : in std_logic ;
+            Asrc1 : in std_logic_vector(1 downto 0) ;
             Asrc2 : in std_logic_vector(2 downto 0) ;
             Fset : in std_logic ;
             ReW : in std_logic ;
@@ -71,6 +71,10 @@ architecture Behavioral of datapath_tb is
             dr_out: out std_logic_vector(31 downto 0);
             res_out: out std_logic_vector(31 downto 0);
             mem_out: out std_logic_vector(31 downto 0)
+            PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
+            shift_amt_src: in std_logic --source of shift amount, '1' indicates constant, '0' indicates register
+            
+
     );
     END COMPONENT;
     -- signal clk : std_logic := '0'; --remove later
@@ -96,8 +100,9 @@ architecture Behavioral of datapath_tb is
    signal  ReW :  std_logic := '0';
    signal  op :  std_logic_vector(3 downto 0) := "0000";
    signal  Flags :  std_logic_vector(3 downto 0) := "0000";
-   signal  Reset_register_file :  std_logic := '0'; 
-
+   signal  Reset_register_file :  std_logic := '0';
+   signal  PW_temp : std_logic ;
+   signal  shift_amt_src : std_logic ;
    
     -- Outputs
     signal reg_read1:  std_logic_vector(31 downto 0);
@@ -112,7 +117,8 @@ architecture Behavioral of datapath_tb is
     signal mem_out: std_logic_vector(31 downto 0);
 
     -- Clock period definitions
-     constant clk_period : time := 100 ns;
+     constant clk_period : time := 100 ns ;
+     constant four_periods : time := 400ns ;
      signal err_cnt_signal : integer := 1;
      --clk_process
 
@@ -174,13 +180,18 @@ architecture Behavioral of datapath_tb is
 		
 		-- Set inputs
 --	  clk<= '0'	
-	   PW<='1';
-	   IorD<="00";
-	   IW<='1';
-	   Asrc1<='0';
-	   Asrc2<="001";
-	   op<="0100";
-	   wait for clk_period;
+--	   PW<='1';
+--	   IorD<="00";
+--	   IW<='1';
+--	   Asrc1<='0';
+--	   Asrc2<="001";
+--	   op<="0100";
+	   
+	   IorD<= "00";
+       IW<= '1';
+       Asrc1<= "11";
+       Asrc2<="001";
+       wait for four_periods ;
 	   
 	   
 		 

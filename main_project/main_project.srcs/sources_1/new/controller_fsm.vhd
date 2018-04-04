@@ -53,8 +53,7 @@ Port(    clk : in std_logic ;
     Fset : out std_logic ;
     ReW : out std_logic ;
     op : out std_logic_vector(3 downto 0) ;
-    shift_amt_src: out std_logic;
-    
+    shift_amt_src: out std_logic;    
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
     Instruction : in std_logic_vector(31 downto 0 );
@@ -98,7 +97,7 @@ begin
                 if (count<3) then --wait for 3 cycles to account for BRAM latency
                     IorD<= "00";
                     IW<= '1';
-                    Asrc1<= '0';
+                    Asrc1<= "11";
                     Asrc2<="001";
                     count<= count+1;
                     PW<='0';
@@ -144,6 +143,8 @@ begin
                             elsif(dpvariant=reg_shift_const) then
                                 Asrc2<= "101";
                                 Asrc1<="00";
+                                end if ;
+                                
                                 
                                 
                                 

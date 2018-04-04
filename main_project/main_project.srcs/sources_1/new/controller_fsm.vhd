@@ -55,26 +55,31 @@ Port(    clk : in std_logic ;
     op : out std_logic_vector(3 downto 0) ;
     shift_amt_src: out std_logic;
     
+    
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
     Instruction : in std_logic_vector(31 downto 0 );
-    setflag: in std_logic    
+    setflag: in std_logic;    
+    immed: in std_logic;
+    preindex: in std_logic
 );
 end controller_fsm;
 
 architecture Behavioral of controller_fsm is
 
-type statetype is (FETCH , RDAB , RDBC , RDC , WRITERES ) ; 
+type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT) ; 
 type instruction_type_type is (DP, DT, Branch) ;
 type dpsubclass_type is (mul,arith,tst); 
 type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
-
-
+type multype_type is (mul,mla);
+type dttype_type is(ldr,str);
 
 signal state: statetype :=FETCH; 
 signal instruction_type : instruction_type_type ;
 signal dpsubclass: dpsubclass_type;
 signal dpvariant: dpvariant_type;
+signal multype: multype_type;
+signal dttype: dttype_type;
 signal count: natural range 10 downto 0 :=0;  
 
 
@@ -98,7 +103,7 @@ begin
                 if (count<3) then --wait for 3 cycles to account for BRAM latency
                     IorD<= "00";
                     IW<= '1';
-                    Asrc1<= '0';
+                    Asrc1<= "11";
                     Asrc2<="001";
                     count<= count+1;
                     PW<='0';
@@ -144,7 +149,96 @@ begin
                             elsif(dpvariant=reg_shift_const) then
                                 Asrc2<= "101";
                                 Asrc1<="00";
-                                
+                                shift_amt_src<='1';
+                                ReW<='1';
+                                state<=WriteRes;
+                            elsif(dpvariant=reg_shift_reg) then
+                                state<= RdBC;
+                            end if;
+                      end if;
+               elsif (instruction_type=DT) then
+                      --DT  
+                        
+               elsif(instruction_type=BRANCH) then
+                    --BRANCH
+                    
+               end if;
+           elsif(state=RDBC) then
+                BW<='1';
+                CW<='1';
+                r1src<="11";
+                r2src<='0';
+                if(dpsubclass= arith) then
+                    state<= REGSHIFTDP;
+                elsif (dpsubclass=mul) then
+                    state<= MULDP;
+                elsif (dpsubclass=tst) then
+                    state<=TESTDP;
+                end if;
+           elsif(state = TESTDP) then
+                Asrc1<="01";
+                Asrc2<="000";
+                Fset<='1';
+                state<=FETCH;
+           elsif(state=MULDP) then
+                if(multype=mul) then
+                    Asrc1<="00";
+                    Asrc2<="110";
+                elsif(multype=mla) then
+                    Asrc2<="010";
+                    Asrc1<="10";
+                end if;
+                state<= WRITERES;
+          elsif(state=WRITERES) then
+                if(instruction_type=DP) then
+                    M2R<='0';
+                    if(dpsubclass=mul) then
+                        Wsrc<='0';
+                    else Wsrc<='1';
+                    end if;
+                    RW<='1';
+                    state<= FETCH;
+                elsif(instruction_type=DT) then
+                    Wsrc<='0';
+                    M2R<='0';
+                    RW<='1';
+                    state<=LOADFINISH;    
+                end if;              
+          elsif(state=RDCSTR) then
+                if(dttype=str) then
+                    r1src<="01";
+                    CW<='1';
+                    AW<='0';
+                    BW<='0';
+                end if;
+                state<=LOADSTOREDT;
+          elsif(state=LOADSTOREDT) then
+                if(immed='1')then
+                    Asrc2<="010";
+                else 
+                    Asrc2<="101";
+                    shift_amt_src<='1';
+                end if;
+                if(preindex='1') then
+                    IorD<="10";
+                else
+                    IorD<="01";
+                end if;
+                
+                
+          
+          elsif(state=LOADFINISH) then
+                if(dttype=ldr) then
+                    Wsrc<='1';
+                    M2R<='1';
+                    RW<='1';
+                 end if;
+                 state<=FETCH;
+             
+                              
+                  
+          
+                    
                                 
                                 
                                                             

@@ -152,7 +152,7 @@ begin
     alu_opcode <= op ;
     alu_carry <=  alu_flags(1) ;
     bram_we <= "1111" when memory_write_enable='1' else  "0000";
-    pmp_proc_inp <= reg_b;
+    pmp_proc_inp <= reg_c;--changed from reg_b to reg_c
     selected_memory_input<=pmp_mem_out;
     shift_amt_sig<= Instruction(11 downto 7) when shift_amt_src ='1' else reg_c(4 downto 0);
     memory_instantiation : entity work.BRAM2_wrapper port map (

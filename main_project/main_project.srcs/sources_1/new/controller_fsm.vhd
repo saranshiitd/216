@@ -21,7 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use work.typePackage.all ;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -70,18 +70,18 @@ end controller_fsm;
 architecture Behavioral of controller_fsm is
 
 type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT, BRANCHST) ; 
-type instruction_type_type is (DP, DT, Branch) ;
-type dpsubclass_type is (mul,arith,tst); 
-type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
-type multype_type is (mul,mla);
-type dttype_type is(ldr,str);
+--type instruction_type_type is (DP, DT, Branch) ;
+--type dpsubclass_type is (mul,arith,tst); 
+--type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
+--type multype_type is (mul,mla);
+--type dttype_type is(ldr,str);
 
 signal state: statetype :=FETCH; 
 signal instruction_type : instruction_type_type ;
 signal dpsubclass: dpsubclass_type;
 signal dpvariant: dpvariant_type;
-signal multype: multype_type;
-signal dttype: dttype_type;
+signal multype: multiply_type;
+signal dttype: dtLoadOrStoreType;
 signal count: natural range 10 downto 0 :=0;  
 
 signal op_reg: std_logic_vector(3 downto 0):="0100";
@@ -206,7 +206,7 @@ begin
                 state<=FETCH;
            elsif(state=MULDP) then
                 op_reg<="0100"; --add
-                if(multype=mul) then
+                if(multype=mult) then
                     Asrc1<="00";
                     Asrc2<="110";
                 elsif(multype=mla) then
@@ -227,14 +227,14 @@ begin
                     Wsrc<='0';
                     M2R<='0';
                     RW<='1';
-                    if(dttype=ldr) then
+                    if(dttype=load) then
                         state<=LOADFINISH; 
                     else 
                         state<=FETCH; 
                     end if;  
                 end if;              
           elsif(state=RDCSTR) then
-                if(dttype=str) then
+                if(dttype=store) then
                     r1src<="01";
                     CW<='1';
                     AW<='0';
@@ -255,11 +255,11 @@ begin
                 else
                     IorD<="01";
                 end if;
-                if(dttype=ldr) then
+                if(dttype=load) then
                     DW<='1';
                     MW<='0';
                     --mem_proc_path inputs
-                 elsif(dttype=str) then
+                 elsif(dttype=store) then
                     MW<='1';
                     --proc_mem_path inputs
                  end if;
@@ -274,7 +274,7 @@ begin
                  count <= count+1;   
           
           elsif(state=LOADFINISH) then
-                if(dttype=ldr) then
+                if(dttype=load) then
                     Wsrc<='1';
                     M2R<='1';
                     RW<='1';

@@ -22,6 +22,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
+
+use work.typePackage.all ;
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --use IEEE.NUMERIC_STD.ALL;
@@ -62,13 +64,7 @@ end controller;
 
 
 architecture Behavioral of controller is
-type state is (fetch , RdAB , RdBC , RdC , WriteRes ) ; 
---type instruction_type_type is (arith , mul , test , halfwordTranfer) ; 
-type instruction_type_type is (DP, DT, Branch) ;
-type dpsubclass_type is (mul,arith,tst, NotDP);
-type dtsubclass_type is ( wordTransfer , byteTransfer , halfwordTranfer , NotDT ) ;
-type multiply_type is ( mult , mla , notMul ) ;
-type dtLoadOrStoreType is (load , store , none ) ;
+
 signal Immediate : std_logic ;
 signal arithRd : std_logic_vector(3 downto 0) ; 
 signal arithRn : std_logic_vector(3 downto 0) ; 
@@ -88,7 +84,8 @@ signal writeBackDT : std_logic ;
 signal mulType : multiply_type ;
 signal loadOrStore : dtLoadOrStoreType ; 
 signal setFlag : std_logic ;
-  
+signal dpvariant : dpvariant_type ;
+
 begin
     instruction_type <=  DT when ( Instruction(27 downto 26) = "01" or ((Instruction(27 downto 26) = "00" and Instruction(11 downto 8) = "0000" and Instruction(4) = '1' and Instruction(7) = '1' and Instruction(6 downto 5) /= "00" ))) else
                         Branch when (Instruction(27 downto 26) = "10") else 
@@ -126,8 +123,12 @@ begin
     mulType <= notMul when ( dpInstructionSubtype /= mul ) else
              mult when (Instruction(21) = '0') else 
              mla ;
-
-
+             
+   dpvariant <= imm when Immediate = '1' else
+                reg_imm when arithRegNoShift = '1' else
+                reg_shift_const when arithRegShiftCons = '1' else 
+                reg_shift_reg ;
+                
 
 
 end Behavioral;

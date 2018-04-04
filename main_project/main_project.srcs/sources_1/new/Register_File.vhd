@@ -51,7 +51,9 @@ end Register_File;
 architecture Behavioral of Register_File is
 type REGISTER_ARRAY_TYPE is array (0 to 14) of std_logic_vector(31 downto 0);
 
-signal register_array : REGISTER_ARRAY_TYPE := (0 => x"45", 1 => x"72", 2 => x"28", 3 => x"6F", 4 => x"72", 5 => x"73", 6 => x"3A") ;
+signal register_array : REGISTER_ARRAY_TYPE := (0 => x"00000045", 1 => x"00000072", 2 => x"00000028", 3 => x"0000006F", 4 => x"00000072", 5 => x"00000073"
+, 6 => x"0000003A" , 7 => x"00000045", 8 => x"00000072", 9 => x"00000028", 10 => x"0000006F", 11 => x"00000072", 12 => x"00000073", 
+ 13 => x"0000003A" , 14 => x"00000073" ) ;
 signal pc: std_logic_vector(31 downto 0) := "00000000000000000000000000000000";
 begin
     --pc_output <= register_array(15);

@@ -88,6 +88,7 @@ architecture Behavioral of datapath_tb is
    signal  DW :  std_logic := '0';
    signal  M2R :  std_logic := '0';
    signal  R1src:  std_logic_vector(1 downto 0) := "00";
+   
    signal  Wsrc:  std_logic := '0';
    signal  R2src :  std_logic := '0' ;
    signal  RW :  std_logic := '0' ;
@@ -213,7 +214,10 @@ architecture Behavioral of datapath_tb is
        
        --WriteRes state
        M2R<='0';
-       
+       Wsrc<='1';
+       RW<='1';
+       wait for clk_period;
+              
 	   
 	   -- Trying ldr r5,[ r6 , #7 ]!
 	   

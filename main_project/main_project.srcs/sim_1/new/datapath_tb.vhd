@@ -49,7 +49,7 @@ architecture Behavioral of datapath_tb is
             M2R : in std_logic ;
             R1src: in std_logic_vector(1 downto 0);
             Wsrc: in std_logic;
-            Rsrc : in std_logic ;
+            R2src : in std_logic ;
             RW : in std_logic ;
             AW : in std_logic ;
             BW : in std_logic ;
@@ -70,7 +70,7 @@ architecture Behavioral of datapath_tb is
             ir_out : out std_logic_vector(31 downto 0);
             dr_out: out std_logic_vector(31 downto 0);
             res_out: out std_logic_vector(31 downto 0);
-            mem_out: out std_logic_vector(31 downto 0)
+            mem_out: out std_logic_vector(31 downto 0);
             PW_temp: in std_logic; --signal to temporarily store alu output in register before writing it in PC
             shift_amt_src: in std_logic --source of shift amount, '1' indicates constant, '0' indicates register
             
@@ -93,8 +93,7 @@ architecture Behavioral of datapath_tb is
    signal  RW :  std_logic := '0' ;
    signal  AW :  std_logic := '0';
    signal  BW :  std_logic := '0';
-   signal  CW :  std_logic := '0';
-   signal  Asrc1 :  std_logic := '0';
+   signal  Asrc1 :  std_logic_vector(1 downto 0) := "00";
    signal  Asrc2 :  std_logic_vector(2 downto 0) := "000" ;
    signal  Fset :  std_logic := '0';
    signal  ReW :  std_logic := '0';
@@ -145,11 +144,11 @@ architecture Behavioral of datapath_tb is
                  M2R => M2R ,
                  R1src => R1src,
                  Wsrc => Wsrc,
-                 Rsrc => Rsrc ,
+                 R2src => Rsrc ,
                  RW => RW ,
                  AW => AW ,
                  BW => BW ,
-                 CW => CW ,
+         
                  Asrc1 => Asrc1 ,
                  Asrc2 => Asrc2 ,
                  Fset => Fset ,
@@ -166,7 +165,10 @@ architecture Behavioral of datapath_tb is
                  ir_out => ir_out,
                  dr_out => dr_out,
                  res_out => res_out,
-                 mem_out => mem_out
+                 mem_out => mem_out,
+                 PW_temp => PW_temp , --signal to temporarily store alu output in register before writing it in PC
+                 shift_amt_src => shift_amt_src --source of shift amount, '1' indicates constant, '0' indicates register
+                
         );
 
      -- Stimulus process

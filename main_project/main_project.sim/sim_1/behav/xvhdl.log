@@ -18,7 +18,6 @@ INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/216_assignments/main_proje
 INFO: [VRFC 10-307] analyzing entity datapath
 INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity datapath_tb
-ERROR: [VRFC 10-1412] syntax error near PW_temp [/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:74]
-ERROR: [VRFC 10-1464] type std_logic does not match with a string literal [/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:192]
+ERROR: [VRFC 10-704] formal cw has no actual or default value [/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:136]
 ERROR: [VRFC 10-1504] unit behavioral ignored due to previous errors [/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd:39]
 INFO: [VRFC 10-240] VHDL file /home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd ignored due to errors

@@ -52,3 +52,5 @@ source datapath_tb.tcl
 add_wave {{/datapath_tb/uut/register_file_instantiation}} 
 restart
 run 1 us
+close_sim
+launch_simulation

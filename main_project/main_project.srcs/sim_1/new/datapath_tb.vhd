@@ -59,7 +59,7 @@ architecture Behavioral of datapath_tb is
             Fset : in std_logic ;
             ReW : in std_logic ;
             op : in std_logic_vector(3 downto 0) ;
-            Flags : in std_logic_vector(3 downto 0) ;
+            Flags : out std_logic_vector(3 downto 0) ;
             Reset_register_file : in std_logic; 
             reg_read1: out std_logic_vector(31 downto 0);
             reg_read2: out std_logic_vector(31 downto 0);
@@ -93,6 +93,7 @@ architecture Behavioral of datapath_tb is
    signal  RW :  std_logic := '0' ;
    signal  AW :  std_logic := '0';
    signal  BW :  std_logic := '0';
+   signal  CW : std_logic:= '0';
    signal  Asrc1 :  std_logic_vector(1 downto 0) := "00";
    signal  Asrc2 :  std_logic_vector(2 downto 0) := "000" ;
    signal  Fset :  std_logic := '0';
@@ -148,7 +149,7 @@ architecture Behavioral of datapath_tb is
                  RW => RW ,
                  AW => AW ,
                  BW => BW ,
-         
+                 CW => CW,
                  Asrc1 => Asrc1 ,
                  Asrc2 => Asrc2 ,
                  Fset => Fset ,
@@ -193,8 +194,10 @@ architecture Behavioral of datapath_tb is
        IW<= '1';
        Asrc1<= "11";
        Asrc2<="001";
+       op<= "0100";
+       PW_temp<='1';
        wait for four_periods ;
-	   
+	   PW<='1';
 	   
 		 
 		--check 

@@ -83,6 +83,8 @@ signal multype: multype_type;
 signal dttype: dttype_type;
 signal count: natural range 10 downto 0 :=0;  
 
+signal op_reg: std_logic_vector(3 downto 0):="0100";
+
 
 signal Immediate : std_logic ;
 signal arithRd : std_logic_vector(3 downto 0) ; 
@@ -95,6 +97,7 @@ signal arithRegShiftReg : std_logic ;
 
 
 begin
+    op<=op_reg;
 
     process(clk)
        begin
@@ -106,6 +109,7 @@ begin
                     IW<= '1';
                     Asrc1<= "11";
                     Asrc2<="001";
+                    op_reg<="0100"; --add
                     count<= count+1;
                     PW<='0';
                 elsif(count=3) then 
@@ -124,6 +128,7 @@ begin
                 if(count<1) then
                     Asrc2<="011";
                     Asrc1<="01";
+                    op_reg<="0100"; --add
                     PW_temp<='1';
                     count<= count+1;
                 else
@@ -142,6 +147,7 @@ begin
                         r2src<='0';
                 end if;
                 if(instruction_type=DP) then
+                        op_reg<=Instruction(24 downto 21);
                         if (dpsubclass=mul or dpsubclass=tst) then
                             state<=RdBC;
                         elsif (dpsubclass=arith) then
@@ -192,11 +198,13 @@ begin
                     state<=TESTDP;
                 end if;
            elsif(state = TESTDP) then
+                op_reg<=Instruction(24 downto 21);
                 Asrc1<="01";
                 Asrc2<="000";
                 Fset<='1';
                 state<=FETCH;
            elsif(state=MULDP) then
+                op_reg<="0100"; --add
                 if(multype=mul) then
                     Asrc1<="00";
                     Asrc2<="110";
@@ -234,6 +242,7 @@ begin
                 state<=LOADSTOREDT;
                 count<=0;
           elsif(state=LOADSTOREDT) then
+                op_reg<="0100"; --add
                 if(immed='1')then
                     Asrc2<="010";
                 else 

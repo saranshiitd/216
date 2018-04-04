@@ -119,8 +119,8 @@ begin
                    Instruction(21) ;
 
     mulType <= notMul when ( dpInstructionSubtype /= mul ) else
-            <= mult when (Instruction(21) = '0') else 
-            <= mla ;
+             mult when (Instruction(21) = '0') else 
+             mla ;
 
 
 

@@ -154,6 +154,8 @@ begin
     pmp_proc_inp <= reg_c;--changed from reg_b to reg_c
     selected_memory_input<=pmp_mem_out;
     shift_amt_sig<= Instruction(11 downto 7) when shift_amt_src ='1' else reg_c(4 downto 0);
+    
+    mpp_mem_inp<= memory_output;
     memory_instantiation : entity work.BRAM2_wrapper port map (
         
         BRAM_PORTA_addr => memory_address ,
@@ -241,7 +243,7 @@ begin
    if rising_edge(clk) then
         
         if(IW = '1' ) then 
-            Instruction <= mpp_proc_out ;
+            Instruction <=memory_output; -- mpp_proc_out ;
         end if ; 
         
         if(DW = '1') then 

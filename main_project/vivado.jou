@@ -17,3 +17,38 @@ launch_simulation
 launch_simulation
 source datapath_tb.tcl
 open_bd_design {/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.srcs/sources_1/bd/BRAM/BRAM.bd}
+close_sim
+launch_simulation
+source datapath_tb.tcl
+run 1 us
+add_wave {{/datapath_tb/uut/alu_instantiation}} 
+restart
+run 1 us
+add_wave {{/datapath_tb/uut/register_file_instantiation}} 
+restart
+run all
+restart
+run 1 us
+close_sim
+launch_simulation
+source datapath_tb.tcl
+add_wave {{/datapath_tb/uut/alu_instantiation}} 
+add_wave {{/datapath_tb/uut/register_file_instantiation}} 
+restart
+run 1 us
+add_wave {{/datapath_tb/uut/memory_instantiation}} 
+restart
+run 1 us
+close_sim
+launch_simulation
+source datapath_tb.tcl
+add_wave {{/datapath_tb/uut/register_file_instantiation}} 
+add_wave {{/datapath_tb/uut/mem_proc_path}} 
+restart
+run 1 us
+close_sim
+launch_simulation
+source datapath_tb.tcl
+add_wave {{/datapath_tb/uut/register_file_instantiation}} 
+restart
+run 1 us

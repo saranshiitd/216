@@ -197,7 +197,9 @@ architecture Behavioral of datapath_tb is
        op<= "0100";
        PW_temp<='1';
        wait for four_periods ;
+       PW_temp<='0';
 	   PW<='1';
+	   IW<='0';
 	   
 		 
 		--check 

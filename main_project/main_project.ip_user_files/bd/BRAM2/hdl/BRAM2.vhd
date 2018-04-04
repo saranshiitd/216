@@ -1,8 +1,8 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2016.4 (lin64) Build 1756540 Mon Jan 23 19:11:19 MST 2017
---Date        : Wed Mar  7 15:49:16 2018
---Host        : cyborg553 running 64-bit Ubuntu 17.10
+--Date        : Wed Apr  4 21:15:05 2018
+--Host        : batComputer running 64-bit Ubuntu 16.04.4 LTS
 --Command     : generate_target BRAM2.bd
 --Design      : BRAM2
 --Purpose     : IP block netlist

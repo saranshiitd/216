@@ -29,20 +29,20 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/main_project.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="73"/>
+    <Option Name="WTXSimLaunchSim" Val="80"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
     <Option Name="WTVcsLaunchSim" Val="0"/>
     <Option Name="WTRivieraLaunchSim" Val="0"/>
     <Option Name="WTActivehdlLaunchSim" Val="0"/>
-    <Option Name="WTXSimExportSim" Val="0"/>
-    <Option Name="WTModelSimExportSim" Val="0"/>
-    <Option Name="WTQuestaExportSim" Val="0"/>
-    <Option Name="WTIesExportSim" Val="0"/>
-    <Option Name="WTVcsExportSim" Val="0"/>
-    <Option Name="WTRivieraExportSim" Val="0"/>
-    <Option Name="WTActivehdlExportSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="1"/>
+    <Option Name="WTModelSimExportSim" Val="1"/>
+    <Option Name="WTQuestaExportSim" Val="1"/>
+    <Option Name="WTIesExportSim" Val="1"/>
+    <Option Name="WTVcsExportSim" Val="1"/>
+    <Option Name="WTRivieraExportSim" Val="1"/>
+    <Option Name="WTActivehdlExportSim" Val="1"/>
     <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
     <Option Name="XSimRadix" Val="hex"/>
     <Option Name="XSimTimeUnit" Val="ns"/>
@@ -59,11 +59,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="BRAM2_ooc.xdc"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/new/shifter.vhd">
         <FileInfo>

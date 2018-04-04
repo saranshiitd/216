@@ -227,7 +227,8 @@ architecture Behavioral of datapath_tb is
          Asrc1<= "11";
          Asrc2<="001";
          op<= "0100";
-         PW_temp<='1';              
+         PW_temp<='1';  
+         DW <= '0' ;            
          wait for four_periods ; --Instruction will be loaded
          PW_temp<='0';
          PW<='1';
@@ -248,6 +249,8 @@ architecture Behavioral of datapath_tb is
          
          
          --LOADSTOREDT state
+         AW <= '0' ; 
+         BW <= '0' ;
          op<="0100"; --add  
          Asrc2<="010";
          IorD<="01";
@@ -255,6 +258,8 @@ architecture Behavioral of datapath_tb is
          MW<='0';
          wait for clk_period*4 ;
          --WRITERES state
+         DW<='0';
+
          Wsrc<='0';
          M2R<='0';
          RW<='1';     

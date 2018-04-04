@@ -54,20 +54,21 @@ Port(    clk : in std_logic ;
     ReW : out std_logic ;
     op : out std_logic_vector(3 downto 0) ;
     shift_amt_src: out std_logic;
-    
+    PW_temp: out std_logic;
     
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
     Instruction : in std_logic_vector(31 downto 0 );
     setflag: in std_logic;    
     immed: in std_logic;
-    preindex: in std_logic
+    preindex: in std_logic;
+    writeback: in std_logic
 );
 end controller_fsm;
 
 architecture Behavioral of controller_fsm is
 
-type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT) ; 
+type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT, BRANCHST) ; 
 type instruction_type_type is (DP, DT, Branch) ;
 type dpsubclass_type is (mul,arith,tst); 
 type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
@@ -108,10 +109,28 @@ begin
                     count<= count+1;
                     PW<='0';
                 elsif(count=3) then 
+                    PW_temp<='1';
+                    count<=count+1;
+                elsif(count=4) then
                     PW<='1';
                     count<=0;
-                    state<= RDAB;
+                    if(instruction_type=branch) then
+                        state<= BRANCHST;
+                    else 
+                        state<= RDAB;
+                    end if;
                 end if;
+            elsif(state<=BRANCHST) then
+                if(count<1) then
+                    Asrc2<="011";
+                    Asrc1<="01";
+                    PW_temp<='1';
+                    count<= count+1;
+                else
+                    PW<='1';
+                    count<=0;
+                    state<=FETCH;
+                end if;            
             elsif (state=RDAB) then
                 AW<='1'; 
                 BW<='1';
@@ -157,11 +176,8 @@ begin
                             end if;
                       end if;
                elsif (instruction_type=DT) then
-                      --DT  
-                        
-               elsif(instruction_type=BRANCH) then
-                    --BRANCH
-                    
+                      state <= RDCSTR;--DT  
+                             
                end if;
            elsif(state=RDBC) then
                 BW<='1';
@@ -202,7 +218,11 @@ begin
                     Wsrc<='0';
                     M2R<='0';
                     RW<='1';
-                    state<=LOADFINISH;    
+                    if(dttype=ldr) then
+                        state<=LOADFINISH; 
+                    else 
+                        state<=FETCH; 
+                    end if;  
                 end if;              
           elsif(state=RDCSTR) then
                 if(dttype=str) then
@@ -212,6 +232,7 @@ begin
                     BW<='0';
                 end if;
                 state<=LOADSTOREDT;
+                count<=0;
           elsif(state=LOADSTOREDT) then
                 if(immed='1')then
                     Asrc2<="010";
@@ -224,8 +245,23 @@ begin
                 else
                     IorD<="01";
                 end if;
-                
-                
+                if(dttype=ldr) then
+                    DW<='1';
+                    MW<='0';
+                    --mem_proc_path inputs
+                 elsif(dttype=str) then
+                    MW<='1';
+                    --proc_mem_path inputs
+                 end if;
+                 if(count>3) then
+                     count<=0;
+                     if(writeback='1') then
+                        state<=WRITERES;
+                     else 
+                        state<=LOADFINISH;
+                     end if;
+                 end if;
+                 count <= count+1;   
           
           elsif(state=LOADFINISH) then
                 if(dttype=ldr) then
@@ -234,19 +270,15 @@ begin
                     RW<='1';
                  end if;
                  state<=FETCH;
-             
+           end if;        
+        end if;
+ end process;
+end Behavioral;
+
                               
                   
           
                     
                                 
                                 
-                                                            
-                               
-                                  
-                
-                
-           end if;        
-      end if;
-    end process;
-end Behavioral;
+          

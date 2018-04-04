@@ -3139,3 +3139,373 @@ selectGraphicalView(RDIResource.RDIViews_WAVEFORM_VIEWER, 125, 504); // l:a (JVi
 selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u:K (t:D, cd:JFrame) - Node
 // Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 516 seconds
+selectCodeEditor("datapath_tb.vhd", 626, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 10 seconds
+selectCodeEditor("datapath_tb.vhd", 626, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 626, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 626, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 626, 192); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 399, 198); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 164, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 252, 247); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 266, 281); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 157 seconds
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 350, 228); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("controller_fsm.vhd", 250, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 250, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 250, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 398, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 398, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 398, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 398, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 398, 140); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 582 seconds
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 176, 374); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 20 seconds
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 178, 381); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 249, 379); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, controller - Behavioral (controller.vhd)]", 13, false); // y:i (D:JPanel, cd:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 19); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, data.coe]", 16, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Coefficient Files, data.coe]", 16, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("data.coe", 253, 25); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 103 seconds
+selectCodeEditor("data.coe", 136, 28); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_datapath - Behavioral (test_datapath.vhd), datapath_i - datapath - Behavioral (datapath.vhd), shifter_instantiation - shifter - Behavioral (shifter.vhd)]", 7, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_datapath - Behavioral (test_datapath.vhd), datapath_i - datapath - Behavioral (datapath.vhd), memory_instantiation - BRAM2_wrapper - STRUCTURE (BRAM2_wrapper.vhd)]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_datapath - Behavioral (test_datapath.vhd), datapath_i - datapath - Behavioral (datapath.vhd), memory_instantiation - BRAM2_wrapper - STRUCTURE (BRAM2_wrapper.vhd)]", 4, true); // y:i (D:JPanel, cd:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_datapath - Behavioral (test_datapath.vhd), datapath_i - datapath - Behavioral (datapath.vhd), register_file_instantiation - Register_File - Behavioral (Register_File.vhd)]", 5, false); // y:i (D:JPanel, cd:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, test_datapath - Behavioral (test_datapath.vhd), datapath_i - datapath - Behavioral (datapath.vhd), register_file_instantiation - Register_File - Behavioral (Register_File.vhd)]", 5, false, false, false, false, false, true); // y:i (D:JPanel, cd:JFrame) - Double Click
+selectCodeEditor("Register_File.vhd", 264, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 264, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 264, 197); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 194, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 194, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 194, 282); // bF:I (JPanel:JComponent, cd:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,132 MB. GUI used memory: 44 MB. Current time: 4/4/18 3:18:22 PM IST
+// Elapsed time: 242 seconds
+typeControlKey((HResource) null, "Register_File.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Register_File.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 14 seconds
+selectCodeEditor("Register_File.vhd", 404, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 404, 210); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 57 seconds
+selectCodeEditor("Register_File.vhd", 252, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "Register_File.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 195 seconds
+selectCodeEditor("Register_File.vhd", 616, 202); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 28 seconds
+selectCodeEditor("Register_File.vhd", 149, 204); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 50 seconds
+selectCodeEditor("Register_File.vhd", 176, 207); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 31 seconds
+selectCodeEditor("Register_File.vhd", 92, 204); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "Register_File.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 95, 292); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 26 seconds
+selectCodeEditor("datapath_tb.vhd", 147, 123); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 54 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "data.coe", 7); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 115 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 303, 313); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 520, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 520, 208); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 236); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("controller_fsm.vhd", 213, 402); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 174, 229); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 162, 182); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 40 seconds
+selectCodeEditor("controller_fsm.vhd", 288, 194); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 20 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Register_File.vhd", 8); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Register_File.vhd", 8); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 541, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("Register_File.vhd", 541, 241); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("Register_File.vhd", 561, 170); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 269, 206); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 112, 79); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 21 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 168, 168); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 276, 189); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mem_proc_path.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Register_File.vhd", 8); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 3); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// Elapsed time: 24 seconds
+selectCodeEditor("controller_fsm.vhd", 226, 233); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 485, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 485, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 485, 195); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("controller_fsm.vhd", 278, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 278, 250); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 99 seconds
+selectCodeEditor("controller_fsm.vhd", 270, 308); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 270, 378); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 12 seconds
+selectCodeEditor("controller_fsm.vhd", 268, 445); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 50 seconds
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 270, 342); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// Elapsed time: 34 seconds
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "datapath_tb.vhd", 5); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "alu.vhd", 4); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 541, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 541, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 541, 238); // bF:I (JPanel:JComponent, cd:JFrame)
+selectCodeEditor("controller_fsm.vhd", 135, 260); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "controller_fsm.vhd", 'c'); // bF:I (JPanel:JComponent, cd:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "controller_fsm.vhd", 6); // k:TdiGroup (j:CodeEditorDocumentPane, cd:JFrame)
+selectCodeEditor("datapath_tb.vhd", 122, 413); // bF:I (JPanel:JComponent, cd:JFrame)
+typeControlKey((HResource) null, "datapath_tb.vhd", 'v'); // bF:I (JPanel:JComponent, cd:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH

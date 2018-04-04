@@ -6,7 +6,7 @@ Jan 23 2017
 /home/batman/216_assignments/main_project/main_project.ip_user_files/bd/BRAM2/ip/BRAM2_blk_mem_gen_0_0/sim/BRAM2_blk_mem_gen_0_0.v,1522856705,verilog,,,,BRAM2_blk_mem_gen_0_0,,,,,,,,
 /home/batman/216_assignments/main_project/main_project.sim/sim_1/behav/glbl.v,1485222234,verilog,,,,glbl,,,,,,,,
 /home/batman/216_assignments/main_project/main_project.srcs/sim_1/imports/hdl/BRAM2_wrapper.vhd,1521790756,vhdl,/home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,bram2_wrapper,,,,,,,,
-/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd,1522856173,vhdl,,,,datapath_tb,,,,,,,,
+/home/batman/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd,1522857679,vhdl,,,,datapath_tb,,,,,,,,
 /home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd,1522854978,vhdl,/home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,register_file,,,,,,,,
 /home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd,1521790756,vhdl,/home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,,,alu,,,,,,,,
 /home/batman/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd,1522836663,vhdl,,,,datapath,,,,,,,,

@@ -249,6 +249,7 @@ architecture Behavioral of datapath_tb is
          
          
          --LOADSTOREDT state
+         Rew <='0' ;
          AW <= '0' ; 
          BW <= '0' ;
          op<="0100"; --add  

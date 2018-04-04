@@ -89,7 +89,7 @@ architecture Behavioral of datapath_tb is
    signal  M2R :  std_logic := '0';
    signal  R1src:  std_logic_vector(1 downto 0) := "00";
    signal  Wsrc:  std_logic := '0';
-   signal  Rsrc :  std_logic := '0' ;
+   signal  R2src :  std_logic := '0' ;
    signal  RW :  std_logic := '0' ;
    signal  AW :  std_logic := '0';
    signal  BW :  std_logic := '0';
@@ -145,7 +145,7 @@ architecture Behavioral of datapath_tb is
                  M2R => M2R ,
                  R1src => R1src,
                  Wsrc => Wsrc,
-                 R2src => Rsrc ,
+                 R2src => R2src ,
                  RW => RW ,
                  AW => AW ,
                  BW => BW ,
@@ -215,7 +215,55 @@ architecture Behavioral of datapath_tb is
        M2R<='0';
        
 	   
-		--check 
+	   -- Trying ldr r5,[ r6 , #7 ]!
+	   
+    --Fetch State
+         IorD<= "00";
+         IW<= '1';
+         Asrc1<= "11";
+         Asrc2<="001";
+         op<= "0100";
+         PW_temp<='1';              
+         wait for four_periods ; --Instruction will be loaded
+         PW_temp<='0';
+         PW<='1';
+         IW<='0'; 
+         wait for clk_period; -- PC will be incremented by 4
+   
+       --RDAB state
+         AW<='1';       
+         BW<='1'; 
+         r1src<="00";
+         r2src<='0';
+         op<= ir_out(24 downto 21);
+         Asrc2<= "000";
+         Asrc1<="00";
+         ReW<='1';
+         Fset<='1';
+         wait for clk_period;   
+         
+         
+         --LOADSTOREDT state
+         op_reg<="0100"; --add  
+         Asrc2<="010";
+         IorD<="01";
+         DW<='1';
+         MW<='0';
+         wait for clk_period*4 ;
+         --WRITERES state
+         Wsrc<='0';
+         M2R<='0';
+         RW<='1';     
+         wait for clk_period ;
+         --LOADFINISH state 
+         Wsrc<='1';
+         M2R<='1';
+         RW<='1';   
+         
+         
+
+    --check 
+    
       		-------------------------------------------------------------
 		---------------------  case 0 -------------------------------
 		-------------------------------------------------------------

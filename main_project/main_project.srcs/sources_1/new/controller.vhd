@@ -57,7 +57,13 @@ Port(    clk : in std_logic ;
     op : out std_logic_vector(3 downto 0) ;
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
-    Instruction : in std_logic_vector(31 downto 0 )    
+    Instruction : in std_logic_vector(31 downto 0 ) ;
+    out_instruction_type : out instruction_type_type ;
+    out_dpInstructionSubtype : out dpsubclass_type ; 
+    out_dtInstructionSubtype : out  dtsubclass_type ; 
+    out_mulType : out multiply_type ; 
+    out_loadOrStore : out dtLoadOrStoreType ; 
+    out_dpvariant : out dpvariant_type
 );
 end controller;
 

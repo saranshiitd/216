@@ -113,10 +113,12 @@ begin
                     op_reg<="0100"; --add
                     count<= count+1;
                     PW<='0';
-                elsif(count=3) then 
+                elsif(count=3) then
+                    IW<='0'; 
                     PW_temp<='1';
                     count<=count+1;
                 elsif(count=4) then
+                    PW_temp<='0';
                     PW<='1';
                     count<=0;
                     if(instruction_type=branch) then

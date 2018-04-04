@@ -59,7 +59,7 @@ architecture Behavioral of datapath_tb is
             Fset : in std_logic ;
             ReW : in std_logic ;
             op : in std_logic_vector(3 downto 0) ;
-            Flags : in std_logic_vector(3 downto 0) ;
+            Flags : out std_logic_vector(3 downto 0) ;
             Reset_register_file : in std_logic; 
             reg_read1: out std_logic_vector(31 downto 0);
             reg_read2: out std_logic_vector(31 downto 0);
@@ -93,6 +93,7 @@ architecture Behavioral of datapath_tb is
    signal  RW :  std_logic := '0' ;
    signal  AW :  std_logic := '0';
    signal  BW :  std_logic := '0';
+   signal  CW : std_logic:= '0';
    signal  Asrc1 :  std_logic_vector(1 downto 0) := "00";
    signal  Asrc2 :  std_logic_vector(2 downto 0) := "000" ;
    signal  Fset :  std_logic := '0';
@@ -148,7 +149,7 @@ architecture Behavioral of datapath_tb is
                  RW => RW ,
                  AW => AW ,
                  BW => BW ,
-         
+                 CW => CW,
                  Asrc1 => Asrc1 ,
                  Asrc2 => Asrc2 ,
                  Fset => Fset ,
@@ -181,22 +182,39 @@ architecture Behavioral of datapath_tb is
 		------------------------------------------------------------
 		
 		-- Set inputs
---	  clk<= '0'	
---	   PW<='1';
---	   IorD<="00";
---	   IW<='1';
---	   Asrc1<='0';
---	   Asrc2<="001";
---	   op<="0100";
 	   
+	   --dp instruction check- add r1, r2, r3 (Hexcode 00921003)
+	   
+	   --Fetch State
 	   IorD<= "00";
        IW<= '1';
        Asrc1<= "11";
        Asrc2<="001";
-       wait for four_periods ;
+       op<= "0100";
+       PW_temp<='1';              
+       wait for four_periods ; --Instruction will be loaded
+       PW_temp<='0';
+	   PW<='1';
+	   IW<='0'; 
+	   wait for clk_period; -- PC will be incremented by 4
 	   
 	   
-		 
+	   --RDAB state
+	   AW<='1';       
+       BW<='1'; 
+       r1src<="00";
+       r2src<='0';
+	   op<= Instruction(24 downto 21);
+	   Asrc2<= "000";
+       Asrc1<="00";
+       ReW<='1';
+       Fset<='1';
+       wait for clk_period;
+       
+       --WriteRes state
+       M2R<='0';
+       
+	   
 		--check 
       		-------------------------------------------------------------
 		---------------------  case 0 -------------------------------

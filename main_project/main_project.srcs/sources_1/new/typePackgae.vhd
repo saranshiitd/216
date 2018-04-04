@@ -43,5 +43,6 @@ package typePackage is
     type multiply_type is ( mult , mla , notMul ) ;
     type dtLoadOrStoreType is (load , store , none ) ;
     type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
+    type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT, BRANCHST) ; 
 
 end typePackage ;

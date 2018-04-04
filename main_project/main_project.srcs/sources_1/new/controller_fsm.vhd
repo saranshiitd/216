@@ -59,35 +59,37 @@ Port(    clk : in std_logic ;
     
     Flags : in std_logic_vector(3 downto 0) ;
     Reset_register_file : out std_logic  ;
-    Instruction : in std_logic_vector(31 downto 0 );
-    setflag: in std_logic;    
-    immed: in std_logic;
-    preindex: in std_logic;
-    writeback: in std_logic
+    Instruction : in std_logic_vector(31 downto 0 ) 
+    
 );
 end controller_fsm;
 
 architecture Behavioral of controller_fsm is
 
-type statetype is (FETCH , RDAB , RDBC , RDCSTR , WRITERES , REGSHIFTDP, MULDP, TESTDP,LOADFINISH,LOADSTOREDT, BRANCHST) ; 
 --type instruction_type_type is (DP, DT, Branch) ;
 --type dpsubclass_type is (mul,arith,tst); 
 --type dpvariant_type is (imm , reg_imm ,reg_shift_const, reg_shift_reg);
 --type multype_type is (mul,mla);
 --type dttype_type is(ldr,str);
 
-signal state: statetype :=FETCH; 
+signal state: statetype := FETCH; 
 signal instruction_type : instruction_type_type ;
 signal dpsubclass: dpsubclass_type;
 signal dpvariant: dpvariant_type;
 signal multype: multiply_type;
 signal dttype: dtLoadOrStoreType;
 signal count: natural range 10 downto 0 :=0;  
+signal dtSubType : dtsubclass_type ; 
 
 signal op_reg: std_logic_vector(3 downto 0):="0100";
 
+signal setflag:  std_logic;    
+signal immed:  std_logic;
+signal preindex:  std_logic;
+signal writeback: std_logic ; 
+signal updown : std_logic ;
 
-signal Immediate : std_logic ;
+--signal Immediate : std_logic ;
 signal arithRd : std_logic_vector(3 downto 0) ; 
 signal arithRn : std_logic_vector(3 downto 0) ; 
 signal arithRm : std_logic_vector(3 downto 0) ; 
@@ -98,6 +100,24 @@ signal arithRegShiftReg : std_logic ;
 
 
 begin
+
+    Decoder_Instantion : entity work.Decoder port map (
+    
+        Instruction => Instruction , 
+        out_instruction_type => instruction_type , 
+        out_dpInstructionSubtype => dpsubclass ,  
+        out_dtInstructionSubtype =>  dtSubType , 
+        out_mulType => multype ,  
+        out_loadOrStore => dttype ,  
+        out_dpvariant => dpvariant ,  
+        out_setFlag =>  setflag ,
+        out_immediate => immed , 
+        out_preIndex => preindex ,  
+        out_writeBack => writeback ,  
+        out_upDown => updown 
+    ) ;
+
+    
     op<=op_reg;
 
     process(clk)

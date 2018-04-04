@@ -1,4 +1,4 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.ip_user_files/bd/BRAM2/ip/BRAM2_blk_mem_gen_0_0/sim/BRAM2_blk_mem_gen_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/batman/216_assignments/main_project/main_project.ip_user_files/bd/BRAM2/ip/BRAM2_blk_mem_gen_0_0/sim/BRAM2_blk_mem_gen_0_0.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module BRAM2_blk_mem_gen_0_0
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/batman/216_assignments/main_project/main_project.sim/sim_1/behav/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

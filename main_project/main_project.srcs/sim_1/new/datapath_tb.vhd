@@ -186,37 +186,37 @@ architecture Behavioral of datapath_tb is
 	   
 	   --dp instruction check- add r1, r2, r3 (Hexcode 00921003)
 	   
-	   --Fetch State
-	   IorD<= "00";
-       IW<= '1';
-       Asrc1<= "11";
-       Asrc2<="001";
-       op<= "0100";
-       PW_temp<='1';              
-       wait for four_periods ; --Instruction will be loaded
-       PW_temp<='0';
-	   PW<='1';
-	   IW<='0'; 
-	   wait for clk_period; -- PC will be incremented by 4
+--	   --Fetch State
+--	   IorD<= "00";
+--       IW<= '1';
+--       Asrc1<= "11";
+--       Asrc2<="001";
+--       op<= "0100";
+--       PW_temp<='1';              
+--       wait for four_periods ; --Instruction will be loaded
+--       PW_temp<='0';
+--	   PW<='1';
+--	   IW<='0'; 
+--	   wait for clk_period; -- PC will be incremented by 4
 	   
 	   
-	   --RDAB state
-	   AW<='1';       
-       BW<='1'; 
-       r1src<="00";
-       r2src<='0';
-	   op<= Instruction(24 downto 21);
-	   Asrc2<= "000";
-       Asrc1<="00";
-       ReW<='1';
-       Fset<='1';
-       wait for clk_period;
+--	   --RDAB state
+--	   AW<='1';       
+--       BW<='1'; 
+--       r1src<="00";
+--       r2src<='0';
+--	   op<= Instruction(24 downto 21);
+--	   Asrc2<= "000";
+--       Asrc1<="00";
+--       ReW<='1';
+--       Fset<='1';
+--       wait for clk_period;
        
-       --WriteRes state
-       M2R<='0';
-       Wsrc<='1';
-       RW<='1';
-       wait for clk_period;
+--       --WriteRes state
+--       M2R<='0';
+--       Wsrc<='1';
+--       RW<='1';
+--       wait for clk_period;
               
 	   
 	   -- Trying ldr r5,[ r6 , #7 ]!
@@ -248,7 +248,7 @@ architecture Behavioral of datapath_tb is
          
          
          --LOADSTOREDT state
-         op_reg<="0100"; --add  
+         op<="0100"; --add  
          Asrc2<="010";
          IorD<="01";
          DW<='1';
@@ -262,10 +262,9 @@ architecture Behavioral of datapath_tb is
          --LOADFINISH state 
          Wsrc<='1';
          M2R<='1';
-         RW<='1';   
+         RW<='1';
          
          
-
     --check 
     
       		-------------------------------------------------------------

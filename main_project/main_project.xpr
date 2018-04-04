@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="/home/sushant/Desktop/col216 lab/216_assignments/main_project/main_project.xpr">
+<Project Version="7" Minor="17" Path="/home/batman/216_assignments/main_project/main_project.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d11fd9260a384bc3a26442db9652b4b0"/>
@@ -29,7 +29,7 @@
     <Option Name="IPStaticSourceDir" Val="$PPRDIR/main_project.ip_user_files/ipstatic"/>
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSANumComputeUnits" Val="16"/>
-    <Option Name="WTXSimLaunchSim" Val="71"/>
+    <Option Name="WTXSimLaunchSim" Val="73"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -59,10 +59,10 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="ip/BRAM2_blk_mem_gen_0_0/BRAM2_blk_mem_gen_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="BRAM2_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2.hwh"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hw_handoff/BRAM2_bd.tcl"/>
-        <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.vhd"/>
         <CompFileExtendedInfo CompFileName="BRAM2.bd" FileRelPathName="hdl/BRAM2.hwdef"/>
       </File>
       <File Path="$PSRCDIR/sources_1/new/shifter.vhd">
@@ -127,9 +127,9 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
+        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="hdl/BRAM.vhd"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="BRAM_ooc.xdc"/>
         <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="ip/BRAM_blk_mem_gen_0_0/BRAM_blk_mem_gen_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="BRAM.bd" FileRelPathName="hdl/BRAM.vhd"/>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/BRAM2/ip/BRAM2_blk_mem_gen_0_0/data.coe">
         <FileInfo>
@@ -199,14 +199,14 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/alu_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/mem_proc_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sim_1/new/mem_proc_tb.vhd">
+      <File Path="$PSRCDIR/sim_1/new/alu_tb.vhd">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>

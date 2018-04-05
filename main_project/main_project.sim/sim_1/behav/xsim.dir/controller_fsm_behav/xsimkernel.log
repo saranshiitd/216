@@ -1,0 +1,4 @@
+Running: xsim.dir/controller_fsm_behav/xsimk -simmode gui -wdb controller_fsm_behav.wdb -simrunnum 0 -socket 48123
+Design successfully loaded
+Design Loading Memory Usage: 50260 KB (Peak: 50488 KB)
+Design Loading CPU Usage: 10 ms

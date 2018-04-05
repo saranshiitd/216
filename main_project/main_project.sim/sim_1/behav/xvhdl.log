@@ -1,20 +1,27 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.ip_user_files/bd/BRAM2/hdl/BRAM2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.ip_user_files/bd/BRAM2/hdl/BRAM2.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity BRAM2
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/typePackgae.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/shifter.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity shifter
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/Register_File.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity Register_File
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/proc_mem_path.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity proc_mem_path
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/multiplier.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity multiplier
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/mem_proc_path.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity mem_proc_path
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/alu.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity alu
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sim_1/imports/hdl/BRAM2_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sim_1/imports/hdl/BRAM2_wrapper.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity BRAM2_wrapper
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/FlagCheckUnit.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FlagCheckUnit
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/Decoder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Decoder
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/Actrl.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Actrl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/datapath.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity datapath
-INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Desktop/216_assignments/main_project/main_project.srcs/sim_1/new/datapath_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity datapath_tb
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/batman/Pictures/216_assignments/main_project/main_project.srcs/sources_1/new/controller_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity controller_fsm

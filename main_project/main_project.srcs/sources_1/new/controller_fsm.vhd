@@ -32,39 +32,79 @@ use work.typePackage.all ;
 --use UNISIM.VComponents.all;
 
 entity controller_fsm is
-Port(    clk : in std_logic ;
-    P_temp: out std_logic;
-    PW : out std_logic ;
-    IorD : out std_logic_vector(1 downto 0) ;
-    MR : out std_logic ;
-    MW : out std_logic ;
-    IW : out std_logic ; 
-    DW : out std_logic ;
-    M2R : out std_logic ;
-    R1src: out std_logic_vector(1 downto 0);
-    Wsrc: out std_logic;
-    R2src : out std_logic ;
-    RW : out std_logic ;
-    AW : out std_logic ;
-    BW : out std_logic ;
-    CW : out std_logic ;
-    Asrc1 : out std_logic_vector(1 downto 0) ;
-    Asrc2 : out std_logic_vector(2 downto 0) ;
-    Fset : out std_logic ;
-    ReW : out std_logic ;
-    op : out std_logic_vector(3 downto 0) ;
+Port(    
+    clk : in std_logic 
+--    P_temp: out std_logic;
+--    PW : out std_logic ;
+--    IorD : out std_logic_vector(1 downto 0) ;
+--    MR : out std_logic ;
+--    MW : out std_logic ;
+--    IW : out std_logic ; 
+--    DW : out std_logic ;
+--    M2R : out std_logic ;
+--    R1src: out std_logic_vector(1 downto 0);
+--    Wsrc: out std_logic;
+--    R2src : out std_logic ;
+--    RW : out std_logic ;
+--    AW : out std_logic ;
+--    BW : out std_logic ;
+--    CW : out std_logic ;
+--    Asrc1 : out std_logic_vector(1 downto 0) ;
+--    Asrc2 : out std_logic_vector(2 downto 0) ;
+--    Fset : out std_logic ;
+--    ReW : out std_logic ;
+--    op : out std_logic_vector(3 downto 0) ;
 
-    shift_amt_src: out std_logic;
-    PW_temp: out std_logic;
+--    shift_amt_src: out std_logic;
+--    PW_temp: out std_logic;
     
-    Flags : in std_logic_vector(3 downto 0) ;
-    Reset_register_file : out std_logic  ;
-    Instruction : in std_logic_vector(31 downto 0 ) 
+--    Reset_register_file : out std_logic  ;
+--    Instruction : in std_logic_vector(31 downto 0 ) 
     
 );
+
+
 end controller_fsm;
 
 architecture Behavioral of controller_fsm is
+
+
+signal P_temp:  std_logic;
+signal PW :  std_logic ;
+signal IorD :  std_logic_vector(1 downto 0) ;
+signal MR :  std_logic ;
+signal MW :  std_logic ;
+signal IW :  std_logic ; 
+signal DW :  std_logic ;
+signal M2R :  std_logic ;
+signal R1src:  std_logic_vector(1 downto 0);
+signal Wsrc:  std_logic;
+signal R2src :  std_logic ;
+signal RW :  std_logic ;
+signal AW :  std_logic ;
+signal BW :  std_logic ;
+signal CW :  std_logic ;
+signal Asrc1 :  std_logic_vector(1 downto 0) ;
+signal Asrc2 :  std_logic_vector(2 downto 0) ;
+signal Fset :  std_logic ;
+signal ReW :  std_logic ;
+signal op :  std_logic_vector(3 downto 0) ;
+signal reg_read1: std_logic_vector(31 downto 0);
+signal reg_read2:  std_logic_vector(31 downto 0);
+signal alu_out: std_logic_vector(31 downto 0);
+signal a_out:  std_logic_vector(31 downto 0);
+signal b_out:  std_logic_vector(31 downto 0);
+signal c_out:  std_logic_vector(31 downto 0);
+signal ir_out :  std_logic_vector(31 downto 0);
+signal dr_out:  std_logic_vector(31 downto 0);
+signal res_out:  std_logic_vector(31 downto 0);
+signal mem_out:  std_logic_vector(31 downto 0);
+
+signal shift_amt_src:  std_logic;
+signal PW_temp:  std_logic;
+
+signal Reset_register_file :  std_logic  ;
+signal Instruction :  std_logic_vector(31 downto 0 ) ;
 
 --type instruction_type_type is (DP, DT, Branch) ;
 --type dpsubclass_type is (mul,arith,tst); 
@@ -80,9 +120,10 @@ signal multype: multiply_type;
 signal dttype: dtLoadOrStoreType;
 signal count: natural range 10 downto 0 :=0;  
 signal dtSubType : dtsubclass_type ; 
+signal Flags : std_logic_vector(3 downto 0) ;
 
 signal op_reg: std_logic_vector(3 downto 0):="0100";
-
+signal opcodeActrl : std_logic_vector(3 downto 0) ;     
 signal setflag:  std_logic;    
 signal immed:  std_logic;
 signal preindex:  std_logic;
@@ -97,7 +138,42 @@ signal arithRs : std_logic_vector(3 downto 0) ;
 signal arithRegNoShift : std_logic ;
 signal arithRegShiftCons : std_logic ; 
 signal arithRegShiftReg : std_logic ;
-
+signal predicate : std_logic ; 
+signal dp_clk :  std_logic ;
+signal dp_PW :  std_logic ;
+signal dp_IorD : std_logic_vector(1 downto 0) ;
+signal dp_MR :  std_logic ;
+signal dp_MW :  std_logic ;
+signal dp_IW :  std_logic ; 
+signal dp_DW :  std_logic ;
+signal dp_M2R :  std_logic ;
+signal dp_R1src:  std_logic_vector(1 downto 0);
+signal dp_Wsrc:  std_logic;
+signal dp_R2src :  std_logic ;
+signal dp_RW :  std_logic ;
+signal dp_AW :  std_logic ;
+signal dp_BW :  std_logic ;
+signal dp_CW :  std_logic ;
+signal dp_Asrc1 :  std_logic_vector(1 downto 0) ;
+signal dp_Asrc2 :  std_logic_vector(2 downto 0) ;
+signal dp_Fset :  std_logic ;
+signal dp_ReW :  std_logic ;
+signal dp_op :  std_logic_vector(3 downto 0) ;
+signal dp_Flags :  std_logic_vector(3 downto 0) ;
+signal dp_Reset_register_file :  std_logic; 
+signal dp_reg_read1:  std_logic_vector(31 downto 0);
+signal dp_reg_read2:  std_logic_vector(31 downto 0);
+signal dp_alu_out: std_logic_vector(31 downto 0);
+signal dp_a_out:  std_logic_vector(31 downto 0);
+signal dp_b_out:  std_logic_vector(31 downto 0);
+signal dp_c_out:  std_logic_vector(31 downto 0);
+signal dp_ir_out :  std_logic_vector(31 downto 0);
+signal dp_dr_out:  std_logic_vector(31 downto 0);
+signal dp_res_out:  std_logic_vector(31 downto 0);
+signal dp_mem_out:  std_logic_vector(31 downto 0);
+    --Further additions
+signal dp_PW_temp:  std_logic; --signal to temporarily store alu output in register before writing it in PC
+signal dp_shift_amt_src:  std_logic ;  --source of shift amount, '1' indicates constant, '0' indicates register
 
 begin
 
@@ -116,7 +192,102 @@ begin
         out_writeBack => writeback ,  
         out_upDown => updown 
     ) ;
+    
+    ActrlInst : entity work.Actrl port map (
+    
+        Instruction => Instruction ,
+        op => opcodeActrl ,
+        updown => updown , 
+        state => state ,
+        instruction_type => instruction_type 
+    
+    ); 
+    
+    FlagCheckInst : entity work.FlagCheckUnit port map ( 
+        
+        Predicate => predicate , 
+        Flags => Flags ,
+        Condition => Instruction(31 downto 28 )
+    
+    ) ;
+    
+    dp_clk <= clk ;
+    dp_PW <= PW ; 
+    dp_IorD <= IorD ; 
+    dp_MR <= MR ; 
+    dp_MW <= MW ;
+    dp_IW <= IW ; 
+    dp_DW <= DW ;
+    dp_M2R <= M2R ;
+    dp_R1src <= R1src ;
+    dp_Wsrc <= Wsrc ; 
+    dp_R2src <= R2src ; 
+    dp_RW <= RW ; 
+    dp_AW <= AW ; 
+    dp_BW <= BW ;
+    dp_CW <= CW ; 
+    dp_Asrc1 <= Asrc1 ;
+    dp_Asrc2 <= Asrc2 ; 
+    dp_Fset <= Fset ; 
+    dp_ReW <= ReW ; 
+    dp_op <= op ;
+    dp_Flags <= Flags ;
+    dp_Reset_register_file <= Reset_register_file ;
+    dp_reg_read1 <= reg_read1 ;
+    dp_reg_read2 <= reg_read2 ;
+    dp_alu_out <= alu_out ; 
+    dp_a_out <= a_out ; 
+    dp_b_out <= b_out ; 
+    dp_c_out <= c_out ; 
+    dp_ir_out <= ir_out ; 
+    dp_dr_out <= dr_out ; 
+    dp_res_out <= res_out ; 
+    dp_mem_out <= mem_out ;
+    dp_PW_temp <= PW_temp ; 
+    dp_shift_amt_src <= shift_amt_src ; 
 
+    dataPathInst : entity work.datapath port map (
+    
+        clk => dp_clk ,
+        PW  => dp_PW ,
+        IorD => dp_IorD ,
+        MR => dp_MR ,
+        MW => dp_MW ,
+        IW => dp_IW , 
+        DW => dp_DW ,
+        M2R => dp_M2R ,
+        R1src => dp_R1src ,
+        Wsrc => dp_Wsrc ,
+        R2src => dp_R2src ,
+        RW => dp_Rw ,
+        AW => dp_AW ,
+        BW => dp_Bw ,
+        CW => dp_Cw ,
+        Asrc1 => dp_Asrc1 ,
+        Asrc2 => dp_Asrc2 ,
+        Fset => dp_Fset ,
+        ReW  => dp_Rew ,
+        op => dp_op ,
+        Flags => dp_Flags ,
+        Reset_register_file => dp_Reset_register_file , 
+        reg_read1 => dp_reg_read1 ,
+        reg_read2 => dp_reg_read2 ,
+        alu_out => dp_alu_out ,
+        a_out => dp_a_out ,
+        b_out => dp_b_out ,
+        c_out => dp_c_out ,
+        ir_out => dp_ir_out ,
+        dr_out => dp_dr_out ,
+        res_out => dp_res_out  ,
+        mem_out => dp_mem_out ,
+        PW_temp => dp_PW_temp,  
+        shift_amt_src => dp_shift_amt_src  
+    
+    
+    );     
+
+    
+    
     
     op<=op_reg;
 
